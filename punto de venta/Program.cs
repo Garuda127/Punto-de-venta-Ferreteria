@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ferreteria_punto_de_venta
+namespace punto_de_venta
 {
     static class Program
     {

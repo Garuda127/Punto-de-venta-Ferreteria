@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ferreteria_punto_de_venta
+namespace punto_de_venta
 {
     public partial class Form1 : Form
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Ferreteria_punto_de_venta.Properties
+namespace punto_de_venta.Properties
 {
 
 

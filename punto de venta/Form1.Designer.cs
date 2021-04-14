@@ -1,4 +1,4 @@
-﻿namespace Ferreteria_punto_de_venta
+﻿namespace punto_de_venta
 {
     partial class Form1
     {
