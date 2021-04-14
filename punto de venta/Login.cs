@@ -31,5 +31,53 @@ namespace punto_de_venta
         {
 
         }
+
+        private void txtUsuario_Enter(object sender, EventArgs e)
+        {
+            if (txtuser.Text == "USUARIO")
+            {
+                txtuser.Text = "";
+                txtuser.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txtuser_Leave(object sender, EventArgs e)
+        {
+            if (txtuser.Text == "")
+            {
+                txtuser.Text = "USUARIO";
+                txtuser.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void txtpass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtpass_Enter(object sender, EventArgs e)
+        {
+            if (txtpass.Text == "CONTRASEÑA")
+            {
+                txtpass.Text = "";
+                txtpass.ForeColor = Color.LightGray;
+                txtpass.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void txtpass_Leave(object sender, EventArgs e)
+        {
+            if (txtpass.Text == "")
+            {
+                txtpass.Text = "CONTRASEÑA";
+                txtpass.ForeColor = Color.DimGray;
+                txtpass.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.button1 = new System.Windows.Forms.Button();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtuser = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txtContrasena = new System.Windows.Forms.TextBox();
+            this.txtpass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnexit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -53,18 +55,20 @@
             this.button1.Text = "Acceder";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // txtUsuario
+            // txtuser
             // 
-            this.txtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsuario.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.ForeColor = System.Drawing.Color.White;
-            this.txtUsuario.Location = new System.Drawing.Point(308, 59);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(408, 20);
-            this.txtUsuario.TabIndex = 1;
-            this.txtUsuario.Text = "Usuario";
-            this.txtUsuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtuser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtuser.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtuser.ForeColor = System.Drawing.Color.White;
+            this.txtuser.Location = new System.Drawing.Point(308, 59);
+            this.txtuser.Name = "txtuser";
+            this.txtuser.Size = new System.Drawing.Size(408, 20);
+            this.txtuser.TabIndex = 1;
+            this.txtuser.Text = "USUARIO";
+            this.txtuser.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtuser.Enter += new System.EventHandler(this.txtUsuario_Enter);
+            this.txtuser.Leave += new System.EventHandler(this.txtuser_Leave);
             // 
             // panel1
             // 
@@ -91,17 +95,20 @@
             this.panel3.Size = new System.Drawing.Size(407, 2);
             this.panel3.TabIndex = 7;
             // 
-            // txtContrasena
+            // txtpass
             // 
-            this.txtContrasena.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.txtContrasena.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtContrasena.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContrasena.ForeColor = System.Drawing.Color.White;
-            this.txtContrasena.Location = new System.Drawing.Point(308, 132);
-            this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.Size = new System.Drawing.Size(408, 20);
-            this.txtContrasena.TabIndex = 6;
-            this.txtContrasena.Text = "Contraseña";
+            this.txtpass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtpass.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpass.ForeColor = System.Drawing.Color.White;
+            this.txtpass.Location = new System.Drawing.Point(308, 132);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.Size = new System.Drawing.Size(408, 20);
+            this.txtpass.TabIndex = 6;
+            this.txtpass.Text = "CONTRASEÑA";
+            this.txtpass.TextChanged += new System.EventHandler(this.txtpass_TextChanged);
+            this.txtpass.Enter += new System.EventHandler(this.txtpass_Enter);
+            this.txtpass.Leave += new System.EventHandler(this.txtpass_Leave);
             // 
             // label1
             // 
@@ -114,18 +121,34 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Login";
             // 
+            // btnexit
+            // 
+            this.btnexit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnexit.BackgroundImage")));
+            this.btnexit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnexit.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnexit.FlatAppearance.BorderSize = 0;
+            this.btnexit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnexit.Location = new System.Drawing.Point(701, 12);
+            this.btnexit.Margin = new System.Windows.Forms.Padding(1);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Size = new System.Drawing.Size(15, 15);
+            this.btnexit.TabIndex = 9;
+            this.btnexit.UseVisualStyleBackColor = true;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(728, 330);
+            this.Controls.Add(this.btnexit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.txtContrasena);
+            this.Controls.Add(this.txtpass);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.txtuser);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
@@ -141,11 +164,12 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtuser;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtContrasena;
+        private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnexit;
     }
 }
