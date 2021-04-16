@@ -79,5 +79,17 @@ namespace punto_de_venta
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string c1 = txtuser.Text;
+            string c2 = txtpass.Text;
+
+            if (c1 == "adminCEO" && c2 == "contraCEO")
+            {
+                Menu cc = new Menu();
+                cc.Show();
+            }
+        }
     }
 }
