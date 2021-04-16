@@ -21,5 +21,10 @@ namespace punto_de_venta
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
