@@ -93,6 +93,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="Agregarproducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregarproducto.Designer.cs">
+      <DependentUpon>Agregarproducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
       <DependentUpon>Proveedores.cs</DependentUpon>
     </Compile>
     <Compile Include="ProveedorMod.cs" />
+    <EmbeddedResource Include="Agregarproducto.resx">
+      <DependentUpon>Agregarproducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
