@@ -37,6 +37,7 @@
             this.txtpass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnexit = new System.Windows.Forms.Button();
+            this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
             this.SuspendLayout();
             // 
             // button1
@@ -54,6 +55,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Acceder";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtuser
             // 
@@ -171,5 +173,6 @@
         private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnexit;
+        private MySql.Data.MySqlClient.CustomInstaller customInstaller1;
     }
 }
