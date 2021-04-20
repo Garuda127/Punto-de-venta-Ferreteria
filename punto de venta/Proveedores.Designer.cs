@@ -29,15 +29,18 @@ namespace punto_de_venta
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Añadirbtn = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Nombretb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Correotb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefonotb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Buscarbtn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.proveedorModBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedorModBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // Añadirbtn
@@ -72,39 +75,6 @@ namespace punto_de_venta
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nombretb,
-            this.Correotb,
-            this.Telefonotb});
-            this.dataGridView1.Location = new System.Drawing.Point(123, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(343, 224);
-            this.dataGridView1.TabIndex = 6;
-            // 
-            // Nombretb
-            // 
-            this.Nombretb.Frozen = true;
-            this.Nombretb.HeaderText = "Nombre";
-            this.Nombretb.Name = "Nombretb";
-            this.Nombretb.ReadOnly = true;
-            // 
-            // Correotb
-            // 
-            this.Correotb.Frozen = true;
-            this.Correotb.HeaderText = "Correo";
-            this.Correotb.Name = "Correotb";
-            this.Correotb.ReadOnly = true;
-            // 
-            // Telefonotb
-            // 
-            this.Telefonotb.Frozen = true;
-            this.Telefonotb.HeaderText = "Teléfono";
-            this.Telefonotb.Name = "Telefonotb";
-            this.Telefonotb.ReadOnly = true;
-            // 
             // Buscarbtn
             // 
             this.Buscarbtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -115,20 +85,57 @@ namespace punto_de_venta
             this.Buscarbtn.Text = "Buscar";
             this.Buscarbtn.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nombreDataGridViewTextBoxColumn,
+            this.telDataGridViewTextBoxColumn,
+            this.mailDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.proveedorModBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(128, 13);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(343, 430);
+            this.dataGridView1.TabIndex = 8;
+            // 
+            // proveedorModBindingSource
+            // 
+            this.proveedorModBindingSource.DataSource = typeof(punto_de_venta.ProveedorMod);
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            // 
+            // telDataGridViewTextBoxColumn
+            // 
+            this.telDataGridViewTextBoxColumn.DataPropertyName = "Tel";
+            this.telDataGridViewTextBoxColumn.HeaderText = "Tel";
+            this.telDataGridViewTextBoxColumn.Name = "telDataGridViewTextBoxColumn";
+            // 
+            // mailDataGridViewTextBoxColumn
+            // 
+            this.mailDataGridViewTextBoxColumn.DataPropertyName = "Mail";
+            this.mailDataGridViewTextBoxColumn.HeaderText = "Mail";
+            this.mailDataGridViewTextBoxColumn.Name = "mailDataGridViewTextBoxColumn";
+            // 
             // Proveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(483, 257);
-            this.Controls.Add(this.Buscarbtn);
+            this.ClientSize = new System.Drawing.Size(483, 455);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.Buscarbtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.back);
             this.Controls.Add(this.Añadirbtn);
             this.Name = "Proveedores";
             this.Text = "Proveedores";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedorModBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -137,10 +144,11 @@ namespace punto_de_venta
         private System.Windows.Forms.Button Añadirbtn;
         private System.Windows.Forms.Button back;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombretb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Correotb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefonotb;
         private System.Windows.Forms.Button Buscarbtn;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource proveedorModBindingSource;
     }
 }
