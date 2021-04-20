@@ -16,5 +16,32 @@ namespace punto_de_venta
         {
             InitializeComponent();
         }
+
+        private void AgregarBTN_Click(object sender, EventArgs e)
+        {
+            AgregarProducto Frm = new AgregarProducto();
+            Frm.Show();
+        }
+
+        private void EditarBTN_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EliminarBTN_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BuscarBTN_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
