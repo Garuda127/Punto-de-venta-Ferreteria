@@ -35,7 +35,6 @@ CREATE TABLE IF NOT EXISTS `Ferreteria`.`Productos` (
   `Precio` DOUBLE NOT NULL,
   `Descripcion` VARCHAR(45) NULL,
   `Inventario` INT NOT NULL,
-  `ID_Categorias` INT NOT NULL,
   PRIMARY KEY (`ID_producto`, `ID_Categorias`),
   INDEX `fk_Productos_Categorias1_idx` (`ID_Categorias` ASC) VISIBLE,
   CONSTRAINT `fk_Productos_Categorias1`
@@ -110,7 +109,6 @@ CREATE TABLE IF NOT EXISTS `Ferreteria`.`Sobrepedido` (
   `Total` DOUBLE NOT NULL,
   `Fecha_Inicio` DATE NOT NULL,
   `Fecha_Fin` DATE NOT NULL,
-  `Total` DOUBLE NOT NULL,
   `Direccion` VARCHAR(45) NOT NULL,
   `Nombre` VARCHAR(45) NOT NULL,
   `Apellido_paterno` VARCHAR(45) NOT NULL,
@@ -135,3 +133,17 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+
+create table Usuarios
+(
+`ID_USER` INT NOT NULL primary key,
+  `USER` char NOT NULL,
+  `PASSWORD` Char NOT NULL
+);
+ALTER TABLE `ferreteria`.`usuarios` 
+CHANGE COLUMN `USER` `USER` CHAR(45) NOT NULL ,
+CHANGE COLUMN `PASSWORD` `PASSWORD` CHAR(45) NOT NULL ;
+
+
+insert into usuarios  VALUES (1, 'ADMIN', 'PASSWORD');
