@@ -1,14 +1,9 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace punto_de_venta
 {
-    class Conexion
+   public abstract class Conexion
     {
 
         public static MySqlConnection getConexion() //Para realizar la conexion con la base de datos
@@ -17,7 +12,7 @@ namespace punto_de_venta
             string bdpuerto = "3307";
             string bdusuario = "root";
             string bdpassword = "toor";
-            string bd = "serviciosocial";
+            string bd = "ferreteria";
 
             string cadenaConexion = "server=" + bdservidor + "; port=" + bdpuerto + "; user id=" + bdusuario + "; password=" + bdpassword + "; database=" + bd;
 
@@ -26,6 +21,7 @@ namespace punto_de_venta
             return conexion;
 
         }
+
 
     }
 }

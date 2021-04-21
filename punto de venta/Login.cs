@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Domain;
+using Common.Cache;
 
 namespace punto_de_venta
 {
@@ -82,14 +84,44 @@ namespace punto_de_venta
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string c1 = txtuser.Text;
-            string c2 = txtpass.Text;
+            //string c1 = txtuser.Text;
+            //string c2 = txtpass.Text;
 
-            if (c1 == "adminCEO" && c2 == "contraCEO")
+            //if (c1 == "adminCEO" && c2 == "contraCEO")
+            //{
+            //    Menu cc = new Menu();
+            //    cc.Show();
+            //}
+
+            if (txtuser.Text != "Username" && txtuser.TextLength > 2)
             {
-                Menu cc = new Menu();
-                cc.Show();
+                if (txtpass.Text != "Password")
+                {
+                    UserModel user = new UserModel();
+                    var validLogin = user.LoginUser(txtuser.Text, txtpass.Text);
+                    if (validLogin == true)
+                    {
+                        Menu cc = new Menu();
+                         cc.Show();
+                   
+                        this.Hide();
+                    }
+                    else
+                    {
+                        msgError("Incorrect username or password entered. \n   Please try again.");
+                        txtpass.Text = "Password";
+                        txtpass.UseSystemPasswordChar = false;
+                        txtuser.Focus();
+                    }
+                }
+                else msgError("Please enter password.");
             }
+            else msgError("Please enter username.");
+        }
+        private void msgError(string msg)
+        {
+            lblErrorMessage.Text = "    " + msg;
+            lblErrorMessage.Visible = true;
         }
     }
 }
