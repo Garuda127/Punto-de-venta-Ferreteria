@@ -29,6 +29,7 @@ namespace punto_de_venta
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            OpenChildForm(new Home());
         }
         //Structs
         private struct RGBColors
@@ -114,6 +115,8 @@ namespace punto_de_venta
         {
             currentChildForm.Close();
             Reset();
+
+            OpenChildForm(new Home());
         }
         private void Reset()
         {
@@ -181,6 +184,11 @@ namespace punto_de_venta
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void PanelBarra_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 

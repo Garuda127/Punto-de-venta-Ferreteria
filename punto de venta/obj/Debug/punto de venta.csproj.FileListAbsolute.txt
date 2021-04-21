@@ -81,3 +81,4 @@ C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\bin\
 C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto de venta.csproj.CopyComplete
 C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.FormModernoPruebas.resources
+C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.Home.resources
