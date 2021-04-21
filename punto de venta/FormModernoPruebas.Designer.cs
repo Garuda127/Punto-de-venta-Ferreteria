@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.PanelMenu = new System.Windows.Forms.Panel();
+            this.btnexit = new FontAwesome.Sharp.IconButton();
+            this.btnAgregarProducto = new FontAwesome.Sharp.IconButton();
             this.btnInventario = new FontAwesome.Sharp.IconButton();
             this.btnProvedores = new FontAwesome.Sharp.IconButton();
             this.btnProductos = new FontAwesome.Sharp.IconButton();
@@ -37,14 +39,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnHome = new FontAwesome.Sharp.IconPictureBox();
             this.PanelBarra = new System.Windows.Forms.Panel();
-            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
+            this.btnMinimizar = new FontAwesome.Sharp.IconButton();
+            this.btnMaximizar = new FontAwesome.Sharp.IconButton();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.PanelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.btnAgregarProducto = new FontAwesome.Sharp.IconButton();
-            this.btnexit = new FontAwesome.Sharp.IconButton();
-            this.btnMaximizar = new FontAwesome.Sharp.IconButton();
-            this.btnMinimizar = new FontAwesome.Sharp.IconButton();
             this.PanelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
@@ -66,8 +66,54 @@
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(185, 586);
+            this.PanelMenu.Size = new System.Drawing.Size(185, 705);
             this.PanelMenu.TabIndex = 0;
+            // 
+            // btnexit
+            // 
+            this.btnexit.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnexit.FlatAppearance.BorderSize = 0;
+            this.btnexit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnexit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexit.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnexit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnexit.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnexit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnexit.IconSize = 50;
+            this.btnexit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnexit.Location = new System.Drawing.Point(0, 645);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnexit.Size = new System.Drawing.Size(185, 60);
+            this.btnexit.TabIndex = 7;
+            this.btnexit.Text = "Cerrar";
+            this.btnexit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnexit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnexit.UseVisualStyleBackColor = true;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
+            // 
+            // btnAgregarProducto
+            // 
+            this.btnAgregarProducto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAgregarProducto.FlatAppearance.BorderSize = 0;
+            this.btnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarProducto.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAgregarProducto.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
+            this.btnAgregarProducto.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAgregarProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAgregarProducto.IconSize = 50;
+            this.btnAgregarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarProducto.Location = new System.Drawing.Point(0, 421);
+            this.btnAgregarProducto.Name = "btnAgregarProducto";
+            this.btnAgregarProducto.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnAgregarProducto.Size = new System.Drawing.Size(185, 60);
+            this.btnAgregarProducto.TabIndex = 6;
+            this.btnAgregarProducto.Text = "Agregar Producto";
+            this.btnAgregarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarProducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAgregarProducto.UseVisualStyleBackColor = true;
+            this.btnAgregarProducto.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // btnInventario
             // 
@@ -219,9 +265,53 @@
             this.PanelBarra.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelBarra.Location = new System.Drawing.Point(185, 0);
             this.PanelBarra.Name = "PanelBarra";
-            this.PanelBarra.Size = new System.Drawing.Size(836, 75);
+            this.PanelBarra.Size = new System.Drawing.Size(896, 75);
             this.PanelBarra.TabIndex = 1;
+            this.PanelBarra.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelBarra_Paint);
             this.PanelBarra.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelBarra_MouseDown);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.FlatAppearance.BorderSize = 0;
+            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.btnMinimizar.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMinimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMinimizar.IconSize = 15;
+            this.btnMinimizar.Location = new System.Drawing.Point(848, 12);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(15, 15);
+            this.btnMinimizar.TabIndex = 3;
+            this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnMaximizar
+            // 
+            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximizar.FlatAppearance.BorderSize = 0;
+            this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaximizar.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.btnMaximizar.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMaximizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMaximizar.IconSize = 15;
+            this.btnMaximizar.Location = new System.Drawing.Point(869, 12);
+            this.btnMaximizar.Name = "btnMaximizar";
+            this.btnMaximizar.Size = new System.Drawing.Size(15, 15);
+            this.btnMaximizar.TabIndex = 2;
+            this.btnMaximizar.UseVisualStyleBackColor = true;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
+            // 
+            // lblTitleChildForm
+            // 
+            this.lblTitleChildForm.AutoSize = true;
+            this.lblTitleChildForm.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.lblTitleChildForm.Location = new System.Drawing.Point(58, 31);
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            this.lblTitleChildForm.Size = new System.Drawing.Size(35, 13);
+            this.lblTitleChildForm.TabIndex = 1;
+            this.lblTitleChildForm.Text = "Home";
+            this.lblTitleChildForm.Click += new System.EventHandler(this.label1_Click);
             // 
             // iconCurrentChildForm
             // 
@@ -236,24 +326,13 @@
             this.iconCurrentChildForm.TabIndex = 0;
             this.iconCurrentChildForm.TabStop = false;
             // 
-            // lblTitleChildForm
-            // 
-            this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(58, 31);
-            this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(35, 13);
-            this.lblTitleChildForm.TabIndex = 1;
-            this.lblTitleChildForm.Text = "Home";
-            this.lblTitleChildForm.Click += new System.EventHandler(this.label1_Click);
-            // 
             // PanelShadow
             // 
             this.PanelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.PanelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelShadow.Location = new System.Drawing.Point(185, 75);
             this.PanelShadow.Name = "PanelShadow";
-            this.PanelShadow.Size = new System.Drawing.Size(836, 10);
+            this.PanelShadow.Size = new System.Drawing.Size(896, 10);
             this.PanelShadow.TabIndex = 2;
             // 
             // panelDesktop
@@ -262,92 +341,14 @@
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(185, 85);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(836, 501);
+            this.panelDesktop.Size = new System.Drawing.Size(896, 620);
             this.panelDesktop.TabIndex = 3;
-            // 
-            // btnAgregarProducto
-            // 
-            this.btnAgregarProducto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAgregarProducto.FlatAppearance.BorderSize = 0;
-            this.btnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarProducto.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAgregarProducto.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
-            this.btnAgregarProducto.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAgregarProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAgregarProducto.IconSize = 50;
-            this.btnAgregarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarProducto.Location = new System.Drawing.Point(0, 421);
-            this.btnAgregarProducto.Name = "btnAgregarProducto";
-            this.btnAgregarProducto.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnAgregarProducto.Size = new System.Drawing.Size(185, 60);
-            this.btnAgregarProducto.TabIndex = 6;
-            this.btnAgregarProducto.Text = "Agregar Producto";
-            this.btnAgregarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarProducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAgregarProducto.UseVisualStyleBackColor = true;
-            this.btnAgregarProducto.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
-            // btnexit
-            // 
-            this.btnexit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnexit.FlatAppearance.BorderSize = 0;
-            this.btnexit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnexit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexit.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnexit.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.btnexit.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnexit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnexit.IconSize = 50;
-            this.btnexit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnexit.Location = new System.Drawing.Point(0, 526);
-            this.btnexit.Name = "btnexit";
-            this.btnexit.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnexit.Size = new System.Drawing.Size(185, 60);
-            this.btnexit.TabIndex = 7;
-            this.btnexit.Text = "Cerrar";
-            this.btnexit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnexit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnexit.UseVisualStyleBackColor = true;
-            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
-            // 
-            // btnMaximizar
-            // 
-            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximizar.FlatAppearance.BorderSize = 0;
-            this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximizar.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.btnMaximizar.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnMaximizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaximizar.IconSize = 15;
-            this.btnMaximizar.Location = new System.Drawing.Point(809, 12);
-            this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(15, 15);
-            this.btnMaximizar.TabIndex = 2;
-            this.btnMaximizar.UseVisualStyleBackColor = true;
-            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.FlatAppearance.BorderSize = 0;
-            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.btnMinimizar.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnMinimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMinimizar.IconSize = 15;
-            this.btnMinimizar.Location = new System.Drawing.Point(788, 12);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(15, 15);
-            this.btnMinimizar.TabIndex = 3;
-            this.btnMinimizar.UseVisualStyleBackColor = true;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // FormModernoPruebas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1021, 586);
+            this.ClientSize = new System.Drawing.Size(1081, 705);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.PanelShadow);
             this.Controls.Add(this.PanelBarra);
