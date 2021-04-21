@@ -27,7 +27,7 @@ namespace DataAccess
                         while (reader.Read())//Obtenemos los datos de la columna y asignamos a los campos de la Cache de Usuario
                         {
                             UserLoginCache.IdUser = reader.GetInt32(0);
-
+                            UserLoginCache.User = reader.GetString(1);
                             UserLoginCache.Password = reader.GetString(2);
                         }
                         return true;
