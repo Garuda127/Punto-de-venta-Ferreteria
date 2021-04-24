@@ -101,6 +101,12 @@
     <Compile Include="Agregarproducto.Designer.cs">
       <DependentUpon>Agregarproducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="AgregarProv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarProv.Designer.cs">
+      <DependentUpon>AgregarProv.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormModernoPruebas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     <Compile Include="ProveedorMod.cs" />
     <EmbeddedResource Include="Agregarproducto.resx">
       <DependentUpon>Agregarproducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarProv.resx">
+      <DependentUpon>AgregarProv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormModernoPruebas.resx">
       <DependentUpon>FormModernoPruebas.cs</DependentUpon>

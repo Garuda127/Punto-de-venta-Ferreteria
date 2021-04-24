@@ -10,27 +10,20 @@ using System.Windows.Forms;
 
 namespace punto_de_venta
 {
-    public partial class Proveedores : Form
+    public partial class AgregarProv : Form
     {
-        public Proveedores()
+        public AgregarProv()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AgregarProv cc = new AgregarProv();
-            cc.Show();
-        }
+            String nombre, correo, tel;
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void back_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            nombre = txt1.Text;
+            correo = txt2.Text;
+            tel = txt3.Text;
         }
     }
 }

@@ -35,10 +35,10 @@ namespace punto_de_venta
             this.button1 = new System.Windows.Forms.Button();
             this.Buscarbtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.proveedorModBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proveedorModBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proveedorModBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +63,7 @@ namespace punto_de_venta
             this.back.TabIndex = 3;
             this.back.Text = "Salir";
             this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // button1
             // 
@@ -99,10 +100,6 @@ namespace punto_de_venta
             this.dataGridView1.Size = new System.Drawing.Size(343, 430);
             this.dataGridView1.TabIndex = 8;
             // 
-            // proveedorModBindingSource
-            // 
-            this.proveedorModBindingSource.DataSource = typeof(punto_de_venta.ProveedorMod);
-            // 
             // nombreDataGridViewTextBoxColumn
             // 
             this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
@@ -120,6 +117,10 @@ namespace punto_de_venta
             this.mailDataGridViewTextBoxColumn.DataPropertyName = "Mail";
             this.mailDataGridViewTextBoxColumn.HeaderText = "Mail";
             this.mailDataGridViewTextBoxColumn.Name = "mailDataGridViewTextBoxColumn";
+            // 
+            // proveedorModBindingSource
+            // 
+            this.proveedorModBindingSource.DataSource = typeof(punto_de_venta.ProveedorMod);
             // 
             // Proveedores
             // 
