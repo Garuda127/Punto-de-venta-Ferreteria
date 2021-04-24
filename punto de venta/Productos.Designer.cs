@@ -102,6 +102,7 @@ namespace punto_de_venta
             this.tab.Name = "tab";
             this.tab.Size = new System.Drawing.Size(543, 329);
             this.tab.TabIndex = 3;
+            this.tab.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tab_CellContentClick);
             // 
             // Nombretb
             // 

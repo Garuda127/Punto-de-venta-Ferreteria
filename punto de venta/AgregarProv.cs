@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataAccess;
 
 namespace punto_de_venta
 {
@@ -24,6 +25,9 @@ namespace punto_de_venta
             nombre = txt1.Text;
             correo = txt2.Text;
             tel = txt3.Text;
+
+            AgregarProve cc = new AgregarProve();
+            cc.Registro(nombre,correo,tel);
         }
     }
 }
