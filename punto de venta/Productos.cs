@@ -43,5 +43,10 @@ namespace punto_de_venta
         {
             Application.Exit();
         }
+
+        private void tab_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
