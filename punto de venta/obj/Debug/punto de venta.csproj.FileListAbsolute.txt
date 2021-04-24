@@ -82,3 +82,16 @@ C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\
 C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.FormModernoPruebas.resources
 C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.Home.resources
+C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\bin\Debug\Common.dll
+C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\bin\Debug\Domain.dll
+C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\bin\Debug\DataAccess.dll
+C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\bin\Debug\Common.pdb
+C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\bin\Debug\Domain.pdb
+C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\bin\Debug\DataAccess.pdb
+C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.AgregarProducto.resources
+C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.AgregarProv.resources
+C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.FormModernoPruebas.resources
+C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.Home.resources
+C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.Productos.resources
+C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.Proveedores.resources

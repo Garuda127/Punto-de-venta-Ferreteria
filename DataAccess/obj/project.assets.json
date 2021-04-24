@@ -1258,19 +1258,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Herfesto\\.nuget\\packages\\": {}
+    "C:\\Users\\hecto\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\hecto\\Documents\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\Herfesto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\DataAccess\\obj\\",
+      "projectPath": "C:\\Users\\hecto\\Documents\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\hecto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hecto\\Documents\\Punto-de-venta-Ferreteria\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Herfesto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hecto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1282,9 +1287,10 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj"
+            "C:\\Users\\hecto\\Documents\\Punto-de-venta-Ferreteria\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\hecto\\Documents\\Punto-de-venta-Ferreteria\\Common\\Common.csproj"
             }
           }
         }
@@ -1297,6 +1303,7 @@
     },
     "frameworks": {
       "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
         "dependencies": {
           "MySql.Data": {
             "target": "Package",
@@ -1323,7 +1330,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
