@@ -29,7 +29,6 @@ namespace punto_de_venta
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Productos));
             this.AgregarBTN = new System.Windows.Forms.Button();
             this.EditarBTN = new System.Windows.Forms.Button();
             this.EliminarBTN = new System.Windows.Forms.Button();
@@ -40,8 +39,6 @@ namespace punto_de_venta
             this.Descripcionbt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Inventariotb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BuscarBTN = new System.Windows.Forms.Button();
-            this.btnexit = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tab)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,6 +83,10 @@ namespace punto_de_venta
             // 
             // tab
             // 
+            this.tab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tab.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.tab.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.tab.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tab.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
@@ -147,43 +148,12 @@ namespace punto_de_venta
             this.BuscarBTN.UseVisualStyleBackColor = false;
             this.BuscarBTN.Click += new System.EventHandler(this.BuscarBTN_Click);
             // 
-            // btnexit
-            // 
-            this.btnexit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnexit.BackgroundImage")));
-            this.btnexit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnexit.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnexit.FlatAppearance.BorderSize = 0;
-            this.btnexit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnexit.Location = new System.Drawing.Point(637, 12);
-            this.btnexit.Margin = new System.Windows.Forms.Padding(1);
-            this.btnexit.Name = "btnexit";
-            this.btnexit.Size = new System.Drawing.Size(17, 15);
-            this.btnexit.TabIndex = 15;
-            this.btnexit.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(542, 12);
-            this.button1.Margin = new System.Windows.Forms.Padding(1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(15, 15);
-            this.button1.TabIndex = 16;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.BurlyWood;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(573, 403);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnexit);
             this.Controls.Add(this.BuscarBTN);
             this.Controls.Add(this.tab);
             this.Controls.Add(this.EliminarBTN);
@@ -211,7 +181,5 @@ namespace punto_de_venta
         private System.Windows.Forms.DataGridViewTextBoxColumn Preciotb;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcionbt;
         private System.Windows.Forms.DataGridViewTextBoxColumn Inventariotb;
-        private System.Windows.Forms.Button btnexit;
-        private System.Windows.Forms.Button button1;
     }
 }
