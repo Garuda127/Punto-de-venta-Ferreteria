@@ -82,7 +82,7 @@ namespace punto_de_venta
 
         private void btnexit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
     }
     
