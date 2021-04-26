@@ -11,6 +11,7 @@ namespace DataAccess
     {
 
         string ins;
+        string bb;
 
         public DataTable mostrar()
         {
@@ -21,5 +22,14 @@ namespace DataAccess
             return consul;
         }
 
+
+        public DataTable busqueda(string texto)
+        {
+            bb = "select * from provee where nombre = '"+  texto +"'"+";";
+            MySqlDataAdapter adp2 = new MySqlDataAdapter(bb, getConexion());
+            DataTable consul2 = new DataTable();
+            adp2.Fill(consul2);
+            return consul2;
+        }
     }
 }

@@ -46,5 +46,11 @@ namespace punto_de_venta
         {
             dataGridView1.DataSource = obje.mostrar();
         }
+
+        private void Buscarbtn_Click(object sender, EventArgs e)
+        {
+            String buscar = busc.Text;
+            dataGridView1.DataSource = obje.busqueda(buscar);
+        }
     }
 }
