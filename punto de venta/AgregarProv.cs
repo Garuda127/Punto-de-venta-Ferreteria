@@ -27,7 +27,7 @@ namespace punto_de_venta
             tel = txt3.Text;
 
             AgregarProve cc = new AgregarProve();
-            cc.Registro(nombre,correo,tel);
+            cc.Registro(nombre,tel,correo);
         }
     }
 }
