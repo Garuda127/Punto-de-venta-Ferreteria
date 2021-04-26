@@ -38,12 +38,6 @@ namespace punto_de_venta
 
         }
 
-        
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void tab_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
