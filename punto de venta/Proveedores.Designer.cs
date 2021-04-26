@@ -39,6 +39,7 @@ namespace punto_de_venta
             this.telDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.proveedorModBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proveedorModBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +49,7 @@ namespace punto_de_venta
             this.Añadirbtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Añadirbtn.Location = new System.Drawing.Point(12, 12);
             this.Añadirbtn.Name = "Añadirbtn";
-            this.Añadirbtn.Size = new System.Drawing.Size(95, 37);
+            this.Añadirbtn.Size = new System.Drawing.Size(121, 37);
             this.Añadirbtn.TabIndex = 2;
             this.Añadirbtn.Text = "Añadir";
             this.Añadirbtn.UseVisualStyleBackColor = true;
@@ -57,9 +58,9 @@ namespace punto_de_venta
             // back
             // 
             this.back.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back.Location = new System.Drawing.Point(12, 138);
+            this.back.Location = new System.Drawing.Point(12, 197);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(95, 37);
+            this.back.Size = new System.Drawing.Size(121, 37);
             this.back.TabIndex = 3;
             this.back.Text = "Salir";
             this.back.UseVisualStyleBackColor = true;
@@ -70,7 +71,7 @@ namespace punto_de_venta
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(12, 75);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 37);
+            this.button1.Size = new System.Drawing.Size(121, 37);
             this.button1.TabIndex = 5;
             this.button1.Text = "Eliminar";
             this.button1.UseVisualStyleBackColor = true;
@@ -79,9 +80,9 @@ namespace punto_de_venta
             // Buscarbtn
             // 
             this.Buscarbtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Buscarbtn.Location = new System.Drawing.Point(12, 199);
+            this.Buscarbtn.Location = new System.Drawing.Point(12, 255);
             this.Buscarbtn.Name = "Buscarbtn";
-            this.Buscarbtn.Size = new System.Drawing.Size(95, 37);
+            this.Buscarbtn.Size = new System.Drawing.Size(121, 37);
             this.Buscarbtn.TabIndex = 7;
             this.Buscarbtn.Text = "Buscar";
             this.Buscarbtn.UseVisualStyleBackColor = true;
@@ -95,7 +96,7 @@ namespace punto_de_venta
             this.telDataGridViewTextBoxColumn,
             this.mailDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.proveedorModBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(128, 13);
+            this.dataGridView1.Location = new System.Drawing.Point(155, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(343, 430);
             this.dataGridView1.TabIndex = 8;
@@ -122,12 +123,24 @@ namespace punto_de_venta
             // 
             this.proveedorModBindingSource.DataSource = typeof(punto_de_venta.ProveedorMod);
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(12, 138);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(121, 37);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Actualizar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Proveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(483, 455);
+            this.ClientSize = new System.Drawing.Size(510, 455);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Buscarbtn);
             this.Controls.Add(this.button1);
@@ -135,6 +148,7 @@ namespace punto_de_venta
             this.Controls.Add(this.Añadirbtn);
             this.Name = "Proveedores";
             this.Text = "Proveedores";
+            this.Load += new System.EventHandler(this.Proveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proveedorModBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -151,5 +165,6 @@ namespace punto_de_venta
         private System.Windows.Forms.DataGridViewTextBoxColumn telDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mailDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource proveedorModBindingSource;
+        private System.Windows.Forms.Button button2;
     }
 }
