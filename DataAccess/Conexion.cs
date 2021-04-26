@@ -21,7 +21,5 @@ namespace punto_de_venta
             return conexion;
 
         }
-
-
     }
 }

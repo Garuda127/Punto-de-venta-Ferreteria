@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataAccess;
 
 namespace punto_de_venta
 {
     public partial class Proveedores : Form
     {
+        MostrarProve obje = new MostrarProve();
+        
+
         public Proveedores()
         {
             InitializeComponent();
@@ -31,6 +35,16 @@ namespace punto_de_venta
         private void back_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Proveedores_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = obje.mostrar();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = obje.mostrar();
         }
     }
 }
