@@ -87,6 +87,7 @@ namespace punto_de_venta
             this.Buscarbtn.TabIndex = 7;
             this.Buscarbtn.Text = "Buscar";
             this.Buscarbtn.UseVisualStyleBackColor = true;
+            this.Buscarbtn.Click += new System.EventHandler(this.Buscarbtn_Click);
             // 
             // dataGridView1
             // 
