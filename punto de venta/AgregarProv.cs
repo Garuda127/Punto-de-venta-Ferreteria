@@ -28,6 +28,8 @@ namespace punto_de_venta
 
             AgregarProve cc = new AgregarProve();
             cc.Registro(nombre,tel,correo);
+            this.Close();
+            MessageBox.Show("Agregado");
         }
     }
 }
