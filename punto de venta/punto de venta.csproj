@@ -107,6 +107,12 @@
     <Compile Include="AgregarProv.Designer.cs">
       <DependentUpon>AgregarProv.cs</DependentUpon>
     </Compile>
+    <Compile Include="Catalogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo.Designer.cs">
+      <DependentUpon>Catalogo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormModernoPruebas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,11 +157,20 @@
       <DependentUpon>Proveedores.cs</DependentUpon>
     </Compile>
     <Compile Include="ProveedorMod.cs" />
+    <Compile Include="Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Agregarproducto.resx">
       <DependentUpon>Agregarproducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AgregarProv.resx">
       <DependentUpon>AgregarProv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo.resx">
+      <DependentUpon>Catalogo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormModernoPruebas.resx">
       <DependentUpon>FormModernoPruebas.cs</DependentUpon>
@@ -179,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Proveedores.resx">
       <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ProveedorMod.datasource" />
@@ -209,9 +227,26 @@
       <Name>Domain</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\candado.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escaner-de-codigo-de-barras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carrito-de-compras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
