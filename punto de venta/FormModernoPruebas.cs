@@ -92,6 +92,7 @@ namespace punto_de_venta
         private void btnOrdenes_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new Ventas());
         }
 
         private void btnProductos_Click(object sender, EventArgs e)

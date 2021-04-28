@@ -180,24 +180,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hecto\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Jova2811\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hecto\\Documents\\Punto-de-venta-Ferreteria\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Users\\Jova2811\\Downloads\\Compressed\\Punto-de-venta-Ferreteria-main\\Punto-de-venta-Ferreteria\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\Users\\hecto\\Documents\\Punto-de-venta-Ferreteria\\Common\\Common.csproj",
-      "packagesPath": "C:\\Users\\hecto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hecto\\Documents\\Punto-de-venta-Ferreteria\\Common\\obj\\",
+      "projectPath": "C:\\Users\\Jova2811\\Downloads\\Compressed\\Punto-de-venta-Ferreteria-main\\Punto-de-venta-Ferreteria\\Common\\Common.csproj",
+      "packagesPath": "C:\\Users\\Jova2811\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jova2811\\Downloads\\Compressed\\Punto-de-venta-Ferreteria-main\\Punto-de-venta-Ferreteria\\Common\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\hecto\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Jova2811\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
