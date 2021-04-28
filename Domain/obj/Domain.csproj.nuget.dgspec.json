@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\LPMexcu\\Punto_de_venta\\Domain\\Domain.csproj": {}
+    "E:\\LPMexcu\\Documents\\Punto_de_venta\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj": {
+    "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj",
+        "projectUniqueName": "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj",
+        "projectPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\LPMexcu\\.nuget\\packages\\",
-        "outputPath": "E:\\LPMexcu\\Punto_de_venta\\Common\\obj\\",
+        "outputPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LPMexcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,14 +61,14 @@
         }
       }
     },
-    "E:\\LPMexcu\\Punto_de_venta\\DataAccess\\DataAccess.csproj": {
+    "E:\\LPMexcu\\Documents\\Punto_de_venta\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LPMexcu\\Punto_de_venta\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "E:\\LPMexcu\\Documents\\Punto_de_venta\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "E:\\LPMexcu\\Punto_de_venta\\DataAccess\\DataAccess.csproj",
+        "projectPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\LPMexcu\\.nuget\\packages\\",
-        "outputPath": "E:\\LPMexcu\\Punto_de_venta\\DataAccess\\obj\\",
+        "outputPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LPMexcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -85,8 +85,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj": {
-                "projectPath": "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj"
+              "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj": {
+                "projectPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj"
               }
             }
           }
@@ -130,14 +130,14 @@
         }
       }
     },
-    "E:\\LPMexcu\\Punto_de_venta\\Domain\\Domain.csproj": {
+    "E:\\LPMexcu\\Documents\\Punto_de_venta\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LPMexcu\\Punto_de_venta\\Domain\\Domain.csproj",
+        "projectUniqueName": "E:\\LPMexcu\\Documents\\Punto_de_venta\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "E:\\LPMexcu\\Punto_de_venta\\Domain\\Domain.csproj",
+        "projectPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\LPMexcu\\.nuget\\packages\\",
-        "outputPath": "E:\\LPMexcu\\Punto_de_venta\\Domain\\obj\\",
+        "outputPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LPMexcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -154,11 +154,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj": {
-                "projectPath": "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj"
+              "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj": {
+                "projectPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj"
               },
-              "E:\\LPMexcu\\Punto_de_venta\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "E:\\LPMexcu\\Punto_de_venta\\DataAccess\\DataAccess.csproj"
+              "E:\\LPMexcu\\Documents\\Punto_de_venta\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\DataAccess\\DataAccess.csproj"
               }
             }
           }

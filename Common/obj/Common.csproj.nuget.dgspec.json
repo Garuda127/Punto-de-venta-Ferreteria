@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj": {}
+    "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj": {}
   },
   "projects": {
-    "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj": {
+    "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj",
+        "projectUniqueName": "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj",
+        "projectPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\LPMexcu\\.nuget\\packages\\",
-        "outputPath": "E:\\LPMexcu\\Punto_de_venta\\Common\\obj\\",
+        "outputPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LPMexcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
