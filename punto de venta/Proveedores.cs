@@ -33,10 +33,7 @@ namespace punto_de_venta
             cc.Show();
         }
 
-        private void back_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+
 
         private void Proveedores_Load(object sender, EventArgs e)
         {

@@ -30,7 +30,6 @@
         {
             this.PanelMenu = new System.Windows.Forms.Panel();
             this.btnexit = new FontAwesome.Sharp.IconButton();
-            this.btnAgregarProducto = new FontAwesome.Sharp.IconButton();
             this.btnInventario = new FontAwesome.Sharp.IconButton();
             this.btnProvedores = new FontAwesome.Sharp.IconButton();
             this.btnProductos = new FontAwesome.Sharp.IconButton();
@@ -56,7 +55,6 @@
             // 
             this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.PanelMenu.Controls.Add(this.btnexit);
-            this.PanelMenu.Controls.Add(this.btnAgregarProducto);
             this.PanelMenu.Controls.Add(this.btnInventario);
             this.PanelMenu.Controls.Add(this.btnProvedores);
             this.PanelMenu.Controls.Add(this.btnProductos);
@@ -91,29 +89,6 @@
             this.btnexit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnexit.UseVisualStyleBackColor = true;
             this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
-            // 
-            // btnAgregarProducto
-            // 
-            this.btnAgregarProducto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAgregarProducto.FlatAppearance.BorderSize = 0;
-            this.btnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarProducto.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAgregarProducto.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
-            this.btnAgregarProducto.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAgregarProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAgregarProducto.IconSize = 50;
-            this.btnAgregarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarProducto.Location = new System.Drawing.Point(0, 421);
-            this.btnAgregarProducto.Name = "btnAgregarProducto";
-            this.btnAgregarProducto.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnAgregarProducto.Size = new System.Drawing.Size(185, 60);
-            this.btnAgregarProducto.TabIndex = 6;
-            this.btnAgregarProducto.Text = "Agregar Producto";
-            this.btnAgregarProducto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarProducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAgregarProducto.UseVisualStyleBackColor = true;
-            this.btnAgregarProducto.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // btnInventario
             // 
@@ -381,7 +356,6 @@
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
         private System.Windows.Forms.Panel PanelShadow;
         private System.Windows.Forms.Panel panelDesktop;
-        private FontAwesome.Sharp.IconButton btnAgregarProducto;
         private FontAwesome.Sharp.IconButton btnexit;
         private FontAwesome.Sharp.IconButton btnMaximizar;
         private FontAwesome.Sharp.IconButton btnMinimizar;
