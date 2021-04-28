@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\LPMexcu\\Documents\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj": {}
+    "E:\\LPMexcu\\Punto_de_venta\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "E:\\LPMexcu\\Documents\\Punto-de-venta-Ferreteria\\Common\\Common.csproj": {
+    "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LPMexcu\\Documents\\Punto-de-venta-Ferreteria\\Common\\Common.csproj",
+        "projectUniqueName": "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "E:\\LPMexcu\\Documents\\Punto-de-venta-Ferreteria\\Common\\Common.csproj",
+        "projectPath": "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\LPMexcu\\.nuget\\packages\\",
-        "outputPath": "E:\\LPMexcu\\Documents\\Punto-de-venta-Ferreteria\\Common\\obj\\",
+        "outputPath": "E:\\LPMexcu\\Punto_de_venta\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LPMexcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,14 +61,14 @@
         }
       }
     },
-    "E:\\LPMexcu\\Documents\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj": {
+    "E:\\LPMexcu\\Punto_de_venta\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LPMexcu\\Documents\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "E:\\LPMexcu\\Punto_de_venta\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "E:\\LPMexcu\\Documents\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj",
+        "projectPath": "E:\\LPMexcu\\Punto_de_venta\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\LPMexcu\\.nuget\\packages\\",
-        "outputPath": "E:\\LPMexcu\\Documents\\Punto-de-venta-Ferreteria\\DataAccess\\obj\\",
+        "outputPath": "E:\\LPMexcu\\Punto_de_venta\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LPMexcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -85,8 +85,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "E:\\LPMexcu\\Documents\\Punto-de-venta-Ferreteria\\Common\\Common.csproj": {
-                "projectPath": "E:\\LPMexcu\\Documents\\Punto-de-venta-Ferreteria\\Common\\Common.csproj"
+              "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj": {
+                "projectPath": "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj"
               }
             }
           }

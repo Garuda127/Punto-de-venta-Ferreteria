@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "16f36THh2qr+YEAJ0kaFjwSRb1q/IuwDnRMkYFSdSvGCPlMe5HYMZl+FAEhm2fOWZ8li3zfUoPvGMpCy93gNmQ==",
+  "dgSpecHash": "cUl6OjX32dUItl0gYt53Od2t028kvb9QCjrDXWLlz9q92ZxsuqlxmpfIlhQ+Dq1ypy1t2VNqEg1PbdZCdpRsoA==",
   "success": true,
-  "projectFilePath": "E:\\LPMexcu\\Documents\\Punto-de-venta-Ferreteria\\Domain\\Domain.csproj",
+  "projectFilePath": "E:\\LPMexcu\\Punto_de_venta\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LPMexcu\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\LPMexcu\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",

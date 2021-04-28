@@ -39,6 +39,7 @@ namespace punto_de_venta
             this.Descripcionbt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Inventariotb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BuscarBTN = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tab)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,9 +48,9 @@ namespace punto_de_venta
             this.AgregarBTN.BackColor = System.Drawing.Color.Gray;
             this.AgregarBTN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AgregarBTN.ForeColor = System.Drawing.SystemColors.Menu;
-            this.AgregarBTN.Location = new System.Drawing.Point(14, 12);
+            this.AgregarBTN.Location = new System.Drawing.Point(12, 88);
             this.AgregarBTN.Name = "AgregarBTN";
-            this.AgregarBTN.Size = new System.Drawing.Size(111, 37);
+            this.AgregarBTN.Size = new System.Drawing.Size(141, 32);
             this.AgregarBTN.TabIndex = 0;
             this.AgregarBTN.Text = "Agregar";
             this.AgregarBTN.UseVisualStyleBackColor = false;
@@ -60,9 +61,9 @@ namespace punto_de_venta
             this.EditarBTN.BackColor = System.Drawing.Color.Gray;
             this.EditarBTN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditarBTN.ForeColor = System.Drawing.SystemColors.Menu;
-            this.EditarBTN.Location = new System.Drawing.Point(132, 12);
+            this.EditarBTN.Location = new System.Drawing.Point(12, 158);
             this.EditarBTN.Name = "EditarBTN";
-            this.EditarBTN.Size = new System.Drawing.Size(111, 37);
+            this.EditarBTN.Size = new System.Drawing.Size(141, 32);
             this.EditarBTN.TabIndex = 1;
             this.EditarBTN.Text = "Editar";
             this.EditarBTN.UseVisualStyleBackColor = false;
@@ -73,9 +74,9 @@ namespace punto_de_venta
             this.EliminarBTN.BackColor = System.Drawing.Color.Gray;
             this.EliminarBTN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EliminarBTN.ForeColor = System.Drawing.SystemColors.Menu;
-            this.EliminarBTN.Location = new System.Drawing.Point(250, 12);
+            this.EliminarBTN.Location = new System.Drawing.Point(12, 221);
             this.EliminarBTN.Name = "EliminarBTN";
-            this.EliminarBTN.Size = new System.Drawing.Size(111, 37);
+            this.EliminarBTN.Size = new System.Drawing.Size(141, 32);
             this.EliminarBTN.TabIndex = 2;
             this.EliminarBTN.Text = "Eliminar";
             this.EliminarBTN.UseVisualStyleBackColor = false;
@@ -99,9 +100,9 @@ namespace punto_de_venta
             this.Inventariotb});
             this.tab.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.tab.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tab.Location = new System.Drawing.Point(14, 55);
+            this.tab.Location = new System.Drawing.Point(181, 88);
             this.tab.Name = "tab";
-            this.tab.Size = new System.Drawing.Size(543, 329);
+            this.tab.Size = new System.Drawing.Size(376, 346);
             this.tab.TabIndex = 3;
             this.tab.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tab_CellContentClick);
             // 
@@ -140,20 +141,28 @@ namespace punto_de_venta
             this.BuscarBTN.BackColor = System.Drawing.Color.Gray;
             this.BuscarBTN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuscarBTN.ForeColor = System.Drawing.SystemColors.Menu;
-            this.BuscarBTN.Location = new System.Drawing.Point(367, 12);
+            this.BuscarBTN.Location = new System.Drawing.Point(12, 26);
             this.BuscarBTN.Name = "BuscarBTN";
-            this.BuscarBTN.Size = new System.Drawing.Size(97, 37);
+            this.BuscarBTN.Size = new System.Drawing.Size(141, 32);
             this.BuscarBTN.TabIndex = 5;
             this.BuscarBTN.Text = "Buscar";
             this.BuscarBTN.UseVisualStyleBackColor = false;
             this.BuscarBTN.Click += new System.EventHandler(this.BuscarBTN_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(181, 37);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(376, 20);
+            this.textBox1.TabIndex = 6;
             // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(573, 403);
+            this.ClientSize = new System.Drawing.Size(573, 453);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.BuscarBTN);
             this.Controls.Add(this.tab);
             this.Controls.Add(this.EliminarBTN);
@@ -166,6 +175,7 @@ namespace punto_de_venta
             this.Text = "Productos";
             ((System.ComponentModel.ISupportInitialize)(this.tab)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -181,5 +191,6 @@ namespace punto_de_venta
         private System.Windows.Forms.DataGridViewTextBoxColumn Preciotb;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcionbt;
         private System.Windows.Forms.DataGridViewTextBoxColumn Inventariotb;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

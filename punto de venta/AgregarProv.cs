@@ -27,7 +27,14 @@ namespace punto_de_venta
             tel = txt3.Text;
 
             AgregarProve cc = new AgregarProve();
-            cc.Registro(nombre,correo,tel);
+            cc.Registro(nombre,tel,correo);
+            this.Close();
+            MessageBox.Show("Agregado");
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

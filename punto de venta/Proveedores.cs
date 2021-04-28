@@ -29,13 +29,11 @@ namespace punto_de_venta
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            EliminarV cc = new EliminarV();
+            cc.Show();
         }
 
-        private void back_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+
 
         private void Proveedores_Load(object sender, EventArgs e)
         {

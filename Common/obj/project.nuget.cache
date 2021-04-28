@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bNoQePic0HQvAVaqpYRBQTxRVJ610tfeSoaRhMp28nl21wICswHInCOrO+w9cvPjQKsk4/+gKbYJwN9K5k6/+g==",
+  "dgSpecHash": "tsKjJAWVKWFyqsig5lXyVH00Y6UUoxjeyZWjtXSKgr8L633QbeIw0vq3n1TdwVdiC8t/KVlY6lqG1TBm7qdZ5Q==",
   "success": true,
-  "projectFilePath": "E:\\LPMexcu\\Documents\\Punto-de-venta-Ferreteria\\Common\\Common.csproj",
+  "projectFilePath": "E:\\LPMexcu\\Punto_de_venta\\Common\\Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LPMexcu\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\LPMexcu\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

@@ -31,5 +31,14 @@ namespace DataAccess
             adp2.Fill(consul2);
             return consul2;
         }
+
+
+        public void borrar(string bor)
+        {
+            bb = "Delete * from provee where nombre= '" + bor + "'" + ";";
+            MySqlConnection conexion = Conexion.getConexion();
+            MySqlCommand comando = new MySqlCommand(bb, conexion);
+            comando.ExecuteNonQuery();
+        }
     }
 }

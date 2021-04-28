@@ -144,3 +144,54 @@ E:\LPMexcu\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto de
 E:\LPMexcu\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto de venta.csproj.CopyComplete
 E:\LPMexcu\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto de venta.exe
 E:\LPMexcu\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto de venta.pdb
+C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.EliminarV.resources
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\punto de venta.exe.config
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\punto de venta.exe
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\punto de venta.pdb
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\BouncyCastle.Crypto.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\Common.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\DataAccess.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\Domain.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\FontAwesome.Sharp.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\Google.Protobuf.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\K4os.Compression.LZ4.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\K4os.Hash.xxHash.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\MySql.Data.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\Renci.SshNet.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\System.Buffers.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\System.Memory.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\System.Numerics.Vectors.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\Ubiety.Dns.Core.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\Zstandard.Net.dll
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\Common.pdb
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\DataAccess.pdb
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\Domain.pdb
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\Google.Protobuf.pdb
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\Google.Protobuf.xml
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\K4os.Compression.LZ4.xml
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\K4os.Hash.xxHash.xml
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\MySql.Data.xml
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\Renci.SshNet.xml
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\System.Buffers.xml
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\System.Memory.xml
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\System.Numerics.Vectors.xml
+E:\LPMexcu\Punto_de_venta\punto de venta\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto de venta.csprojAssemblyReference.cache
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.AgregarProducto.resources
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.AgregarProv.resources
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.EliminarV.resources
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.FormModernoPruebas.resources
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.Home.resources
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.Login.resources
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.Menu.resources
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.Productos.resources
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.Properties.Resources.resources
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.Proveedores.resources
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto de venta.csproj.GenerateResource.cache
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto de venta.csproj.CoreCompileInputs.cache
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto de venta.csproj.CopyComplete
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto de venta.exe
+E:\LPMexcu\Punto_de_venta\punto de venta\obj\Debug\punto de venta.pdb
