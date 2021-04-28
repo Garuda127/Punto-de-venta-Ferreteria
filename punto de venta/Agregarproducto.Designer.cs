@@ -43,7 +43,7 @@ namespace punto_de_venta
             this.btnexit = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.texprecio = new System.Windows.Forms.TextBox();
             this.NumCatego = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.Numst)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumCatego)).BeginInit();
@@ -186,16 +186,16 @@ namespace punto_de_venta
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(21, 129);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 20);
+            this.label8.Size = new System.Drawing.Size(59, 20);
             this.label8.TabIndex = 16;
-            this.label8.Text = "Marca";
+            this.label8.Text = "Precio";
             // 
-            // textBox2
+            // texprecio
             // 
-            this.textBox2.Location = new System.Drawing.Point(163, 131);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(137, 20);
-            this.textBox2.TabIndex = 15;
+            this.texprecio.Location = new System.Drawing.Point(163, 131);
+            this.texprecio.Name = "texprecio";
+            this.texprecio.Size = new System.Drawing.Size(137, 20);
+            this.texprecio.TabIndex = 15;
             // 
             // NumCatego
             // 
@@ -213,7 +213,7 @@ namespace punto_de_venta
             this.Controls.Add(this.NumCatego);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.texprecio);
             this.Controls.Add(this.btnexit);
             this.Controls.Add(this.Texarea);
             this.Controls.Add(this.Numst);
@@ -255,7 +255,7 @@ namespace punto_de_venta
         private System.Windows.Forms.Button btnexit;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox texprecio;
         private System.Windows.Forms.NumericUpDown NumCatego;
     }
 }
