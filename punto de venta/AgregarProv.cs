@@ -31,5 +31,10 @@ namespace punto_de_venta
             this.Close();
             MessageBox.Show("Agregado");
         }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

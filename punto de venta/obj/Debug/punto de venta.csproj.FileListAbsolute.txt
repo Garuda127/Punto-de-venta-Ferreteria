@@ -195,3 +195,19 @@ C:\Users\Jova2811\Downloads\Compressed\Punto-de-venta-Ferreteria-main\Punto-de-v
 C:\Users\Jova2811\Downloads\Compressed\Punto-de-venta-Ferreteria-main\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto de venta.exe
 C:\Users\Jova2811\Downloads\Compressed\Punto-de-venta-Ferreteria-main\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto de venta.pdb
 C:\Users\Jova2811\Downloads\Compressed\Punto-de-venta-Ferreteria-main\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.Catalogo.resources
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto de venta.csprojAssemblyReference.cache
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.AgregarProducto.resources
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.AgregarProv.resources
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.Catalogo.resources
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.FormModernoPruebas.resources
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.Home.resources
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.Login.resources
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.Menu.resources
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.Productos.resources
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.Properties.Resources.resources
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.Proveedores.resources
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.Ventas.resources
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto de venta.csproj.GenerateResource.cache
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto de venta.csproj.CoreCompileInputs.cache
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto de venta.exe
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto de venta.pdb
