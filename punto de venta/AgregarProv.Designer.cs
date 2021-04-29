@@ -126,7 +126,7 @@ namespace punto_de_venta
             this.btnexit.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnexit.FlatAppearance.BorderSize = 0;
             this.btnexit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnexit.Location = new System.Drawing.Point(259, 10);
+            this.btnexit.Location = new System.Drawing.Point(259, 9);
             this.btnexit.Margin = new System.Windows.Forms.Padding(1);
             this.btnexit.Name = "btnexit";
             this.btnexit.Size = new System.Drawing.Size(15, 15);
