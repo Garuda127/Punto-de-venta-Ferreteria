@@ -14,8 +14,9 @@ namespace DataAccess
             MySqlConnection conexion = Conexion.getConexion();
             conexion.Open();
 
-            string sql = "INSERT INTO provee (nombre, tel, mail) VALUES(@nombre, @tel, @mail)";
+            string sql = "insert into productos(ID_Categorias,Nombre,Marca,Precio,Descripcion,InVentario) values (1,@Nombre,@Marca,@Precio,@Descripcion,@InVentario)";
             MySqlCommand comando = new MySqlCommand(sql, conexion);
+            
             comando.Parameters.AddWithValue("@Nombre", name);
             comando.Parameters.AddWithValue("@Marca", marc);
             comando.Parameters.AddWithValue("@Precio", pre);
@@ -27,7 +28,7 @@ namespace DataAccess
 
         public DataTable mostrar()
         {
-            MySqlDataAdapter adp = new MySqlDataAdapter("Select * from productos", getConexion());
+            MySqlDataAdapter adp = new MySqlDataAdapter("select ID_Categorias as ID_Categoria, Nombre,Marca,Precio,Descripcion,InVentario as Stock from productos", getConexion());
             DataTable consul = new DataTable();
             adp.Fill(consul);
             return consul;

@@ -31,7 +31,7 @@ namespace punto_de_venta
             MessageBoxButtons BTN = MessageBoxButtons.OK;
             String name = texnombre.Text;
             String marc = texMarca.Text;
-            double prec = parce texprecio.Text;
+            double prec = Double.Parse(texprecio.Text);
             String desc = Texarea.Text;
             int stoc = (int)Numst.Value;
             Double cos;

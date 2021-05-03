@@ -101,7 +101,7 @@ namespace punto_de_venta
                     var validLogin = user.LoginUser(txtuser.Text, txtpass.Text);
                     if (validLogin == true)
                     {
-                        Menu cc = new Menu();
+                        FormModernoPruebas cc = new FormModernoPruebas();
                          cc.Show();
                    
                         this.Hide();

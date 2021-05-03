@@ -33,11 +33,6 @@ namespace punto_de_venta
             this.EditarBTN = new System.Windows.Forms.Button();
             this.EliminarBTN = new System.Windows.Forms.Button();
             this.tab = new System.Windows.Forms.DataGridView();
-            this.Nombretb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Marcatb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Preciotb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcionbt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Inventariotb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BuscarBTN = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tab)).BeginInit();
@@ -92,12 +87,6 @@ namespace punto_de_venta
             this.tab.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tab.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.tab.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tab.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nombretb,
-            this.Marcatb,
-            this.Preciotb,
-            this.Descripcionbt,
-            this.Inventariotb});
             this.tab.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.tab.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.tab.Location = new System.Drawing.Point(181, 88);
@@ -105,36 +94,6 @@ namespace punto_de_venta
             this.tab.Size = new System.Drawing.Size(376, 346);
             this.tab.TabIndex = 3;
             this.tab.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tab_CellContentClick);
-            // 
-            // Nombretb
-            // 
-            this.Nombretb.HeaderText = "Nombre";
-            this.Nombretb.Name = "Nombretb";
-            this.Nombretb.ReadOnly = true;
-            // 
-            // Marcatb
-            // 
-            this.Marcatb.HeaderText = "Marca";
-            this.Marcatb.Name = "Marcatb";
-            this.Marcatb.ReadOnly = true;
-            // 
-            // Preciotb
-            // 
-            this.Preciotb.HeaderText = "Precio";
-            this.Preciotb.Name = "Preciotb";
-            this.Preciotb.ReadOnly = true;
-            // 
-            // Descripcionbt
-            // 
-            this.Descripcionbt.HeaderText = "Descripcion";
-            this.Descripcionbt.Name = "Descripcionbt";
-            this.Descripcionbt.ReadOnly = true;
-            // 
-            // Inventariotb
-            // 
-            this.Inventariotb.HeaderText = "Stock";
-            this.Inventariotb.Name = "Inventariotb";
-            this.Inventariotb.ReadOnly = true;
             // 
             // BuscarBTN
             // 
@@ -186,11 +145,6 @@ namespace punto_de_venta
         private System.Windows.Forms.Button EliminarBTN;
         private System.Windows.Forms.DataGridView tab;
         private System.Windows.Forms.Button BuscarBTN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombretb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Marcatb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Preciotb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcionbt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Inventariotb;
         private System.Windows.Forms.TextBox textBox1;
     }
 }

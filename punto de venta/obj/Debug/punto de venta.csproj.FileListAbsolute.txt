@@ -211,3 +211,7 @@ E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto de venta.cspr
 E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto de venta.csproj.CoreCompileInputs.cache
 E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto de venta.exe
 E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto de venta.pdb
+C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.AgregarProv.resources
+C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.Catalogo.resources
+C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.Ventas.resources
+C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.EliminarV.resources
