@@ -13,11 +13,13 @@ namespace punto_de_venta
 {
     public partial class Productos : Form
     {
+        MessageBoxButtons BTN = MessageBoxButtons.OK;
         DatosProdu DP = new DatosProdu();
         public Productos()
         {
             InitializeComponent();
             tab.DataSource = DP.mostrar();
+            
         }
 
         private void AgregarBTN_Click(object sender, EventArgs e)
@@ -29,16 +31,35 @@ namespace punto_de_venta
 
         private void EditarBTN_Click(object sender, EventArgs e)
         {
-
+            EditarProductos Frm = new EditarProductos();
+            Frm.Show();
         }
 
         private void EliminarBTN_Click(object sender, EventArgs e)
         {
-
+            if (!TBBus.Text.Equals(""))
+            {
+                DP.eliminar(CBFIL.Text, TBBus.Text);
+            }
+            else
+            {
+                MessageBox.Show("Ingresa una palabra clabe o digito", "Error al ingresar los datos", BTN);
+            }
         }
 
         private void BuscarBTN_Click(object sender, EventArgs e)
         {
+
+
+            if (!TBBus.Text.Equals(""))
+            {
+                tab.DataSource = DP.busqueda(CBFIL.Text,TBBus.Text);
+                
+            }
+            else
+            {
+                MessageBox.Show("Ingresa una palabra clabe o digito", "Error al ingresar los datos", BTN);
+            }
         }
 
         private void Actual_Click(object sender, EventArgs e)

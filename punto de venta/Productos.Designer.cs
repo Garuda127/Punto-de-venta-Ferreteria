@@ -34,8 +34,9 @@ namespace punto_de_venta
             this.EliminarBTN = new System.Windows.Forms.Button();
             this.tab = new System.Windows.Forms.DataGridView();
             this.BuscarBTN = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TBBus = new System.Windows.Forms.TextBox();
             this.Actual = new System.Windows.Forms.Button();
+            this.CBFIL = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.tab)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,10 +95,6 @@ namespace punto_de_venta
             this.tab.Name = "tab";
             this.tab.Size = new System.Drawing.Size(376, 346);
             this.tab.TabIndex = 3;
-<<<<<<< Updated upstream
-=======
-            this.tab.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tab_CellContentClick);
->>>>>>> Stashed changes
             // 
             // BuscarBTN
             // 
@@ -108,16 +105,16 @@ namespace punto_de_venta
             this.BuscarBTN.Name = "BuscarBTN";
             this.BuscarBTN.Size = new System.Drawing.Size(141, 32);
             this.BuscarBTN.TabIndex = 5;
-            this.BuscarBTN.Text = "Buscar";
+            this.BuscarBTN.Text = "Filtrar";
             this.BuscarBTN.UseVisualStyleBackColor = false;
             this.BuscarBTN.Click += new System.EventHandler(this.BuscarBTN_Click);
             // 
-            // textBox1
+            // TBBus
             // 
-            this.textBox1.Location = new System.Drawing.Point(181, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(376, 20);
-            this.textBox1.TabIndex = 6;
+            this.TBBus.Location = new System.Drawing.Point(308, 37);
+            this.TBBus.Name = "TBBus";
+            this.TBBus.Size = new System.Drawing.Size(249, 20);
+            this.TBBus.TabIndex = 6;
             // 
             // Actual
             // 
@@ -132,14 +129,29 @@ namespace punto_de_venta
             this.Actual.UseVisualStyleBackColor = false;
             this.Actual.Click += new System.EventHandler(this.Actual_Click);
             // 
+            // CBFIL
+            // 
+            this.CBFIL.FormattingEnabled = true;
+            this.CBFIL.Items.AddRange(new object[] {
+            "ID_Producto",
+            "ID_Categorias",
+            "nombre",
+            "Marca",
+            "Proteccion"});
+            this.CBFIL.Location = new System.Drawing.Point(181, 37);
+            this.CBFIL.Name = "CBFIL";
+            this.CBFIL.Size = new System.Drawing.Size(121, 21);
+            this.CBFIL.TabIndex = 8;
+            // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(573, 453);
+            this.Controls.Add(this.CBFIL);
             this.Controls.Add(this.Actual);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TBBus);
             this.Controls.Add(this.BuscarBTN);
             this.Controls.Add(this.tab);
             this.Controls.Add(this.EliminarBTN);
@@ -164,7 +176,8 @@ namespace punto_de_venta
         private System.Windows.Forms.Button EliminarBTN;
         private System.Windows.Forms.DataGridView tab;
         private System.Windows.Forms.Button BuscarBTN;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TBBus;
         private System.Windows.Forms.Button Actual;
+        private System.Windows.Forms.ComboBox CBFIL;
     }
 }

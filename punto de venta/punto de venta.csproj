@@ -113,7 +113,15 @@
     <Compile Include="Catalogo.Designer.cs">
       <DependentUpon>Catalogo.cs</DependentUpon>
     </Compile>
-    <Compile Include="EliminarV.cs" />
+    <Compile Include="EditarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarProductos.Designer.cs">
+      <DependentUpon>EditarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarV.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EliminarV.Designer.cs">
       <DependentUpon>EliminarV.cs</DependentUpon>
     </Compile>
@@ -175,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Catalogo.resx">
       <DependentUpon>Catalogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarProductos.resx">
+      <DependentUpon>EditarProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarV.resx">
       <DependentUpon>EliminarV.cs</DependentUpon>

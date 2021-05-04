@@ -204,7 +204,8 @@ namespace punto_de_venta
             "Material electrico",
             "Material para plomeria",
             "Hogar",
-            "Jardin"});
+            "Jardin",
+            "Proteccion"});
             this.CBCatego.Location = new System.Drawing.Point(163, 173);
             this.CBCatego.Name = "CBCatego";
             this.CBCatego.Size = new System.Drawing.Size(337, 21);
