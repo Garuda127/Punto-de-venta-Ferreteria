@@ -94,6 +94,10 @@ namespace punto_de_venta
             this.tab.Name = "tab";
             this.tab.Size = new System.Drawing.Size(376, 346);
             this.tab.TabIndex = 3;
+<<<<<<< Updated upstream
+=======
+            this.tab.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tab_CellContentClick);
+>>>>>>> Stashed changes
             // 
             // BuscarBTN
             // 
@@ -146,6 +150,7 @@ namespace punto_de_venta
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Productos";
             this.Text = "Productos";
+            this.Load += new System.EventHandler(this.Productos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tab)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

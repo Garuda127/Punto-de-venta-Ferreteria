@@ -45,5 +45,10 @@ namespace punto_de_venta
         {
             tab.DataSource = DP.mostrar();
         }
+
+        private void Productos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

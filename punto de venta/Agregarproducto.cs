@@ -90,7 +90,7 @@ namespace punto_de_venta
                                                     else
                                                     {
                                                         tf = false;
-                                                        MessageBox.Show("Ingresa una categoria valida", "Erro al ingresar los datos", BTN);
+                                                        MessageBox.Show("Ingresa una categoria valida", "Error al ingresar los datos", BTN);
                                                     }
                                                 }
                                             }
@@ -101,31 +101,31 @@ namespace punto_de_venta
                             else
                             {
                                 tf = false;
-                                MessageBox.Show("Ingresa un valor entero en Stock", "Erro al ingresar los datos", BTN);
+                                MessageBox.Show("Ingresa un valor entero en Stock", "Error al ingresar los datos", BTN);
                             }
                         }
                         else
                         {
                             tf = false;
-                            MessageBox.Show("Ingresa un valor valido en el espacio de la Descripción", "Erro al ingresar los datos", BTN);
+                            MessageBox.Show("Ingresa un valor valido en el espacio de la Descripción", "Error al ingresar los datos", BTN);
                         }
                     }
                     else
                     {
                         tf = false;
-                        MessageBox.Show("Ingresa un valor decimal o entero en el espacio de Precio", "Erro al ingresar los datos", BTN);
+                        MessageBox.Show("Ingresa un valor decimal o entero en el espacio de Precio", "Error al ingresar los datos", BTN);
                     }
                 }
                 else
                 {
                     tf = false;
-                    MessageBox.Show("Ingresa un valor valido en el espacio de Marca", "Erro al ingresar los datos", BTN);
+                    MessageBox.Show("Ingresa un valor valido en el espacio de Marca", "Error al ingresar los datos", BTN);
                 }
             }
             else
             {
                 tf = false;
-                MessageBox.Show("Ingresa un valor valido en el espacio de nombre", "Erro al ingresar los datos", BTN);
+                MessageBox.Show("Ingresa un valor valido en el espacio de nombre", "Error al ingresar los datos", BTN);
             }
             if (tf)
 
@@ -134,6 +134,7 @@ namespace punto_de_venta
 
                 MessageBox.Show("Los datos se han agregado a la base de datos", "Correcto", BTN);
                 this.Close();
+            
             }
         }
     }

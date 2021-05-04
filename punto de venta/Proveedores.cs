@@ -29,8 +29,8 @@ namespace punto_de_venta
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            EliminarV cc = new EliminarV();
-            cc.Show();
+              //EliminarV cc = new EliminarV();
+              //cc.Show();
         }
 
 

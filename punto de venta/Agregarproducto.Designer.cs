@@ -200,7 +200,7 @@ namespace punto_de_venta
             // 
             this.CBCatego.FormattingEnabled = true;
             this.CBCatego.Items.AddRange(new object[] {
-            "Herramienta",
+            "Herramientas",
             "Material electrico",
             "Material para plomeria",
             "Hogar",
