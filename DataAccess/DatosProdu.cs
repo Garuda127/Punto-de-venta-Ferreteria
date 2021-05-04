@@ -9,26 +9,28 @@ namespace DataAccess
 {
     public class DatosProdu : Conexion
     {
-        public void Reg(string name, string marc, double pre, string desc, int can)  //registra usuarios en la bd
+        public void Reg(string name, string marc,int cat, double pre, string desc, int can)  //registra usuarios en la bd
         {
             MySqlConnection conexion = Conexion.getConexion();
             conexion.Open();
 
-            string sql = "insert into productos(ID_Categorias,Nombre,Marca,Precio,Descripcion,InVentario) values (1,@Nombre,@Marca,@Precio,@Descripcion,@InVentario)";
+            string sql = "insert into productos(ID_Categorias,Nombre,Marca,Precio,Descripcion,InVentario) values (@ID_Categorias,@Nombre,@Marca,@Precio,@Descripcion,@InVentario)";
             MySqlCommand comando = new MySqlCommand(sql, conexion);
-            
+            comando.Parameters.AddWithValue("@ID_Categorias", cat);
             comando.Parameters.AddWithValue("@Nombre", name);
             comando.Parameters.AddWithValue("@Marca", marc);
             comando.Parameters.AddWithValue("@Precio", pre);
             comando.Parameters.AddWithValue("@Descripcion", desc);
             comando.Parameters.AddWithValue("@InVentario", can);
+            
             comando.ExecuteNonQuery();
             conexion.Close();
         }
 
         public DataTable mostrar()
         {
-            MySqlDataAdapter adp = new MySqlDataAdapter("select ID_Categorias as ID_Categoria, Nombre,Marca,Precio,Descripcion,InVentario as Stock from productos", getConexion());
+            MySqlDataAdapter adp = new MySqlDataAdapter("select a.ID_Producto, c.Nombre as Categoria , a.Nombre, a.Marca, a.Precio, a.Descripcion, a.InVentario as Stock from productos a inner join categorias c on c.ID_Categorias = a.ID_Categorias ; " +
+                "", getConexion());
             DataTable consul = new DataTable();
             adp.Fill(consul);
             return consul;
@@ -37,7 +39,7 @@ namespace DataAccess
 
         public DataTable busqueda(string texto)
         { 
-            MySqlDataAdapter adp2 = new MySqlDataAdapter("select * from provee where nombre = '" + texto + "'" + ";", getConexion());
+            MySqlDataAdapter adp2 = new MySqlDataAdapter("select * from productos where nombre = '" + texto + "'" + ";", getConexion());
             DataTable consul2 = new DataTable();
             adp2.Fill(consul2);
             return consul2;

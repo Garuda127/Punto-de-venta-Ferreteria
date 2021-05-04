@@ -24,7 +24,7 @@ namespace punto_de_venta
         {
             AgregarProducto Frm = new AgregarProducto();
             Frm.Show();
-
+            
         }
 
         private void EditarBTN_Click(object sender, EventArgs e)
@@ -41,17 +41,9 @@ namespace punto_de_venta
         {
         }
 
-        private void tab_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Actual_Click(object sender, EventArgs e)
         {
-
-        }
-
-        public void actualizar(Boolean tf){
-            if (tf)
-            {
-                tab.DataSource = DP.mostrar();
-            }
-            
+            tab.DataSource = DP.mostrar();
         }
     }
 }

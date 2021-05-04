@@ -215,3 +215,39 @@ C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\
 C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.Catalogo.resources
 C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.Ventas.resources
 C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.EliminarV.resources
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\punto de venta.exe.config
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\punto de venta.exe
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\punto de venta.pdb
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\BouncyCastle.Crypto.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\Common.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\DataAccess.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\Domain.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\FontAwesome.Sharp.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\Google.Protobuf.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\K4os.Compression.LZ4.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\K4os.Hash.xxHash.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\MySql.Data.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\Renci.SshNet.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\System.Buffers.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\System.Memory.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\System.Numerics.Vectors.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\Ubiety.Dns.Core.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\Zstandard.Net.dll
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\Common.pdb
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\DataAccess.pdb
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\Domain.pdb
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\Google.Protobuf.pdb
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\Google.Protobuf.xml
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\K4os.Compression.LZ4.xml
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\K4os.Hash.xxHash.xml
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\MySql.Data.xml
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\Renci.SshNet.xml
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\System.Buffers.xml
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\System.Memory.xml
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\System.Numerics.Vectors.xml
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.EliminarV.resources
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto de venta.csproj.CopyComplete

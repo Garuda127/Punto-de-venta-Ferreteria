@@ -44,39 +44,38 @@ namespace punto_de_venta
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.texprecio = new System.Windows.Forms.TextBox();
-            this.NumCatego = new System.Windows.Forms.NumericUpDown();
+            this.CBCatego = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Numst)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumCatego)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(79, 9);
+            this.label1.Location = new System.Drawing.Point(172, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 20);
+            this.label1.Size = new System.Drawing.Size(206, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Agregar productos";
             // 
             // texnombre
             // 
-            this.texnombre.Location = new System.Drawing.Point(163, 54);
+            this.texnombre.Location = new System.Drawing.Point(163, 50);
             this.texnombre.Name = "texnombre";
-            this.texnombre.Size = new System.Drawing.Size(137, 20);
+            this.texnombre.Size = new System.Drawing.Size(337, 20);
             this.texnombre.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(21, 52);
+            this.label2.Location = new System.Drawing.Point(21, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 20);
+            this.label2.Size = new System.Drawing.Size(85, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nombre";
             // 
@@ -84,30 +83,30 @@ namespace punto_de_venta
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(21, 91);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 20);
+            this.label3.Size = new System.Drawing.Size(67, 24);
             this.label3.TabIndex = 4;
             this.label3.Text = "Marca";
             // 
             // texMarca
             // 
-            this.texMarca.Location = new System.Drawing.Point(163, 93);
+            this.texMarca.Location = new System.Drawing.Point(163, 91);
             this.texMarca.Name = "texMarca";
-            this.texMarca.Size = new System.Drawing.Size(137, 20);
+            this.texMarca.Size = new System.Drawing.Size(337, 20);
             this.texMarca.TabIndex = 3;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(21, 201);
+            this.label5.Location = new System.Drawing.Point(21, 214);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 20);
+            this.label5.Size = new System.Drawing.Size(121, 24);
             this.label5.TabIndex = 8;
             this.label5.Text = "Descripción";
             // 
@@ -115,11 +114,11 @@ namespace punto_de_venta
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(21, 311);
+            this.label6.Location = new System.Drawing.Point(22, 331);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 20);
+            this.label6.Size = new System.Drawing.Size(61, 24);
             this.label6.TabIndex = 10;
             this.label6.Text = "Stock";
             // 
@@ -128,7 +127,7 @@ namespace punto_de_venta
             this.AgregarBTN.BackColor = System.Drawing.Color.Gray;
             this.AgregarBTN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AgregarBTN.ForeColor = System.Drawing.SystemColors.Menu;
-            this.AgregarBTN.Location = new System.Drawing.Point(83, 339);
+            this.AgregarBTN.Location = new System.Drawing.Point(177, 376);
             this.AgregarBTN.Name = "AgregarBTN";
             this.AgregarBTN.Size = new System.Drawing.Size(158, 44);
             this.AgregarBTN.TabIndex = 11;
@@ -138,16 +137,16 @@ namespace punto_de_venta
             // 
             // Numst
             // 
-            this.Numst.Location = new System.Drawing.Point(163, 313);
+            this.Numst.Location = new System.Drawing.Point(163, 331);
             this.Numst.Name = "Numst";
-            this.Numst.Size = new System.Drawing.Size(137, 20);
+            this.Numst.Size = new System.Drawing.Size(339, 20);
             this.Numst.TabIndex = 12;
             // 
             // Texarea
             // 
-            this.Texarea.Location = new System.Drawing.Point(163, 203);
+            this.Texarea.Location = new System.Drawing.Point(163, 214);
             this.Texarea.Name = "Texarea";
-            this.Texarea.Size = new System.Drawing.Size(137, 96);
+            this.Texarea.Size = new System.Drawing.Size(337, 96);
             this.Texarea.TabIndex = 13;
             this.Texarea.Text = "";
             // 
@@ -158,7 +157,7 @@ namespace punto_de_venta
             this.btnexit.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnexit.FlatAppearance.BorderSize = 0;
             this.btnexit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnexit.Location = new System.Drawing.Point(285, 9);
+            this.btnexit.Location = new System.Drawing.Point(487, 9);
             this.btnexit.Margin = new System.Windows.Forms.Padding(1);
             this.btnexit.Name = "btnexit";
             this.btnexit.Size = new System.Drawing.Size(15, 15);
@@ -170,47 +169,54 @@ namespace punto_de_venta
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(21, 168);
+            this.label7.Location = new System.Drawing.Point(21, 173);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 20);
+            this.label7.Size = new System.Drawing.Size(99, 24);
             this.label7.TabIndex = 18;
-            this.label7.Text = "ID_Categoria";
+            this.label7.Text = "Categoria";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(21, 129);
+            this.label8.Location = new System.Drawing.Point(22, 132);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 20);
+            this.label8.Size = new System.Drawing.Size(70, 24);
             this.label8.TabIndex = 16;
             this.label8.Text = "Precio";
             // 
             // texprecio
             // 
-            this.texprecio.Location = new System.Drawing.Point(163, 131);
+            this.texprecio.Location = new System.Drawing.Point(163, 132);
             this.texprecio.Name = "texprecio";
-            this.texprecio.Size = new System.Drawing.Size(137, 20);
+            this.texprecio.Size = new System.Drawing.Size(337, 20);
             this.texprecio.TabIndex = 15;
             // 
-            // NumCatego
+            // CBCatego
             // 
-            this.NumCatego.Location = new System.Drawing.Point(163, 168);
-            this.NumCatego.Name = "NumCatego";
-            this.NumCatego.Size = new System.Drawing.Size(137, 20);
-            this.NumCatego.TabIndex = 19;
+            this.CBCatego.FormattingEnabled = true;
+            this.CBCatego.Items.AddRange(new object[] {
+            "Herramienta",
+            "Material electrico",
+            "Material para plomeria",
+            "Hogar",
+            "Jardin"});
+            this.CBCatego.Location = new System.Drawing.Point(163, 173);
+            this.CBCatego.Name = "CBCatego";
+            this.CBCatego.Size = new System.Drawing.Size(337, 21);
+            this.CBCatego.TabIndex = 19;
             // 
             // AgregarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(312, 395);
-            this.Controls.Add(this.NumCatego);
+            this.ClientSize = new System.Drawing.Size(512, 432);
+            this.Controls.Add(this.CBCatego);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.texprecio);
@@ -234,7 +240,6 @@ namespace punto_de_venta
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar producto";
             ((System.ComponentModel.ISupportInitialize)(this.Numst)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumCatego)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,6 +261,6 @@ namespace punto_de_venta
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox texprecio;
-        private System.Windows.Forms.NumericUpDown NumCatego;
+        private System.Windows.Forms.ComboBox CBCatego;
     }
 }

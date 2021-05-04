@@ -34,6 +34,9 @@ namespace punto_de_venta
             double prec = Double.Parse(texprecio.Text);
             String desc = Texarea.Text;
             int stoc = (int)Numst.Value;
+            string CBCat = CBCatego.Text;
+            
+            int cb = 0;
             Double cos;
             Boolean tf;
             if (!name.Equals(""))
@@ -49,6 +52,51 @@ namespace punto_de_venta
                             if (!stoc.Equals(""))
                             {
                                 tf = true;
+                                if (!CBCat.Equals(""))
+                                {
+                                    if (CBCat.Equals("Herramientas"))
+                                    {
+                                        tf = true;
+                                        cb = 1;
+                                    }
+                                    else
+                                    {
+                                        if (CBCat.Equals("Material electrico"))
+                                        {
+                                            tf = true;
+                                            cb = 2;
+                                        }
+                                        else
+                                        {
+                                            if (CBCat.Equals("Material para plomeria"))
+                                            {
+                                                tf = true;
+                                                cb = 3;
+                                            }
+                                            else
+                                            {
+                                                if (CBCat.Equals("Hogar"))
+                                                {
+                                                    tf = true;
+                                                    cb = 4;
+                                                }
+                                                else
+                                                {
+                                                    if (CBCat.Equals("Jardin"))
+                                                    {
+                                                        tf = true;
+                                                        cb = 5;
+                                                    }
+                                                    else
+                                                    {
+                                                        tf = false;
+                                                        MessageBox.Show("Ingresa una categoria valida", "Erro al ingresar los datos", BTN);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                             else
                             {
@@ -82,9 +130,10 @@ namespace punto_de_venta
             if (tf)
 
             {
-                DP.Reg(name,marc,prec,desc,stoc);
+                DP.Reg(name,marc,cb,prec,desc,stoc);
 
                 MessageBox.Show("Los datos se han agregado a la base de datos", "Correcto", BTN);
+                this.Close();
             }
         }
     }
