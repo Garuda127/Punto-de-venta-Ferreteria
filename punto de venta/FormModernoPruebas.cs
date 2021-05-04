@@ -86,6 +86,10 @@ namespace punto_de_venta
         private void btnInicio_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            currentChildForm.Close();
+            Reset();
+
+            OpenChildForm(new Home());
 
         }
 
