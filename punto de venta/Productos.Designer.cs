@@ -35,6 +35,7 @@ namespace punto_de_venta
             this.tab = new System.Windows.Forms.DataGridView();
             this.BuscarBTN = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Actual = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tab)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +57,7 @@ namespace punto_de_venta
             this.EditarBTN.BackColor = System.Drawing.Color.Gray;
             this.EditarBTN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditarBTN.ForeColor = System.Drawing.SystemColors.Menu;
-            this.EditarBTN.Location = new System.Drawing.Point(12, 158);
+            this.EditarBTN.Location = new System.Drawing.Point(12, 139);
             this.EditarBTN.Name = "EditarBTN";
             this.EditarBTN.Size = new System.Drawing.Size(141, 32);
             this.EditarBTN.TabIndex = 1;
@@ -69,7 +70,7 @@ namespace punto_de_venta
             this.EliminarBTN.BackColor = System.Drawing.Color.Gray;
             this.EliminarBTN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EliminarBTN.ForeColor = System.Drawing.SystemColors.Menu;
-            this.EliminarBTN.Location = new System.Drawing.Point(12, 221);
+            this.EliminarBTN.Location = new System.Drawing.Point(12, 190);
             this.EliminarBTN.Name = "EliminarBTN";
             this.EliminarBTN.Size = new System.Drawing.Size(141, 32);
             this.EliminarBTN.TabIndex = 2;
@@ -93,14 +94,17 @@ namespace punto_de_venta
             this.tab.Name = "tab";
             this.tab.Size = new System.Drawing.Size(376, 346);
             this.tab.TabIndex = 3;
+<<<<<<< Updated upstream
+=======
             this.tab.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tab_CellContentClick);
+>>>>>>> Stashed changes
             // 
             // BuscarBTN
             // 
             this.BuscarBTN.BackColor = System.Drawing.Color.Gray;
             this.BuscarBTN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuscarBTN.ForeColor = System.Drawing.SystemColors.Menu;
-            this.BuscarBTN.Location = new System.Drawing.Point(12, 26);
+            this.BuscarBTN.Location = new System.Drawing.Point(12, 37);
             this.BuscarBTN.Name = "BuscarBTN";
             this.BuscarBTN.Size = new System.Drawing.Size(141, 32);
             this.BuscarBTN.TabIndex = 5;
@@ -115,12 +119,26 @@ namespace punto_de_venta
             this.textBox1.Size = new System.Drawing.Size(376, 20);
             this.textBox1.TabIndex = 6;
             // 
+            // Actual
+            // 
+            this.Actual.BackColor = System.Drawing.Color.Gray;
+            this.Actual.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Actual.ForeColor = System.Drawing.SystemColors.Menu;
+            this.Actual.Location = new System.Drawing.Point(12, 241);
+            this.Actual.Name = "Actual";
+            this.Actual.Size = new System.Drawing.Size(141, 32);
+            this.Actual.TabIndex = 7;
+            this.Actual.Text = "Actualizar";
+            this.Actual.UseVisualStyleBackColor = false;
+            this.Actual.Click += new System.EventHandler(this.Actual_Click);
+            // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(573, 453);
+            this.Controls.Add(this.Actual);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.BuscarBTN);
             this.Controls.Add(this.tab);
@@ -132,6 +150,7 @@ namespace punto_de_venta
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Productos";
             this.Text = "Productos";
+            this.Load += new System.EventHandler(this.Productos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tab)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -146,5 +165,6 @@ namespace punto_de_venta
         private System.Windows.Forms.DataGridView tab;
         private System.Windows.Forms.Button BuscarBTN;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button Actual;
     }
 }
