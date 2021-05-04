@@ -30,7 +30,6 @@
         {
             this.PanelMenu = new System.Windows.Forms.Panel();
             this.btnexit = new FontAwesome.Sharp.IconButton();
-            this.btnInventario = new FontAwesome.Sharp.IconButton();
             this.btnProvedores = new FontAwesome.Sharp.IconButton();
             this.btnProductos = new FontAwesome.Sharp.IconButton();
             this.btnOrdenes = new FontAwesome.Sharp.IconButton();
@@ -55,7 +54,6 @@
             // 
             this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.PanelMenu.Controls.Add(this.btnexit);
-            this.PanelMenu.Controls.Add(this.btnInventario);
             this.PanelMenu.Controls.Add(this.btnProvedores);
             this.PanelMenu.Controls.Add(this.btnProductos);
             this.PanelMenu.Controls.Add(this.btnOrdenes);
@@ -89,29 +87,6 @@
             this.btnexit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnexit.UseVisualStyleBackColor = true;
             this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
-            // 
-            // btnInventario
-            // 
-            this.btnInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInventario.FlatAppearance.BorderSize = 0;
-            this.btnInventario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInventario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInventario.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnInventario.IconChar = FontAwesome.Sharp.IconChar.Receipt;
-            this.btnInventario.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnInventario.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnInventario.IconSize = 50;
-            this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInventario.Location = new System.Drawing.Point(0, 361);
-            this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnInventario.Size = new System.Drawing.Size(185, 60);
-            this.btnInventario.TabIndex = 5;
-            this.btnInventario.Text = "Inventario";
-            this.btnInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnInventario.UseVisualStyleBackColor = true;
-            this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
             // 
             // btnProvedores
             // 
@@ -346,7 +321,6 @@
         private System.Windows.Forms.Panel PanelMenu;
         private FontAwesome.Sharp.IconButton btnInicio;
         private System.Windows.Forms.Panel panel1;
-        private FontAwesome.Sharp.IconButton btnInventario;
         private FontAwesome.Sharp.IconButton btnProvedores;
         private FontAwesome.Sharp.IconButton btnProductos;
         private FontAwesome.Sharp.IconButton btnOrdenes;
