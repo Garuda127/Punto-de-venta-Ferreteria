@@ -254,3 +254,4 @@ E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\System.Numerics.Vec
 E:\LPMexcu\Documents\Punto_de_venta\punto de venta\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.EliminarV.resources
 E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto de venta.csproj.CopyComplete
+E:\LPMexcu\Documents\Punto_de_venta\punto de venta\obj\Debug\punto_de_venta.EditarProductos.resources

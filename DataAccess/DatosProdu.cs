@@ -9,6 +9,7 @@ namespace DataAccess
 {
     public class DatosProdu : Conexion
     {
+        //Registrar
         public void Reg(string name, string marc,int cat, double pre, string desc, int can)  //registra usuarios en la bd
         {
             MySqlConnection conexion = Conexion.getConexion();
@@ -27,6 +28,7 @@ namespace DataAccess
             conexion.Close();
         }
 
+        //Realizar
         public DataTable mostrar()
         {
             MySqlDataAdapter adp = new MySqlDataAdapter("select a.ID_Producto, c.Nombre as Categoria , a.Nombre, a.Marca, a.Precio, a.Descripcion, a.InVentario as Stock from productos a inner join categorias c on c.ID_Categorias = a.ID_Categorias ; " +
@@ -36,21 +38,31 @@ namespace DataAccess
             return consul;
         }
 
-
-        public DataTable busqueda(string texto)
+        //Aplicar filtros a la informacion
+        public DataTable busqueda(string nb, string texto)
         { 
-            MySqlDataAdapter adp2 = new MySqlDataAdapter("select * from productos where nombre = '" + texto + "'" + ";", getConexion());
+            MySqlDataAdapter adp2 = new MySqlDataAdapter("select * from productos where "+ nb +"= '" + texto + "'" + ";", getConexion());
             DataTable consul2 = new DataTable();
             adp2.Fill(consul2);
             return consul2;
         }
 
-
-        public void borrar(string bor)
+        //Se elimina de la base de datos
+        public DataTable eliminar(string nb,string texto)
         {
-            MySqlConnection conexion = Conexion.getConexion();
-            MySqlCommand comando = new MySqlCommand("Delete * from provee where nombre= '" + bor + "'" + ";", conexion);
-            comando.ExecuteNonQuery();
+            MySqlDataAdapter adp2 = new MySqlDataAdapter("Delete from productos where " + nb + " = '" + texto + "'" + "; ", getConexion());
+            DataTable consul2 = new DataTable();
+            adp2.Fill(consul2);
+            return consul2;
+        }
+
+        //Se realiza la edicion de datos
+        public DataTable editar(string Columna, string Modificar, string Producto)
+        {
+            MySqlDataAdapter adp2 = new MySqlDataAdapter("update productos set "+ Columna + " = "+ Modificar + " where ID_producto = "+ Producto + ";", getConexion());
+            DataTable consul2 = new DataTable();
+            adp2.Fill(consul2);
+            return consul2;
         }
     }
 }

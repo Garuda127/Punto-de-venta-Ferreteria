@@ -89,8 +89,16 @@ namespace punto_de_venta
                                                     }
                                                     else
                                                     {
-                                                        tf = false;
-                                                        MessageBox.Show("Ingresa una categoria valida", "Error al ingresar los datos", BTN);
+                                                        if (CBCat.Equals("Proteccion"))
+                                                        {
+                                                            tf = true;
+                                                            cb = 6;
+                                                        }
+                                                        else
+                                                        {
+                                                            tf = false;
+                                                            MessageBox.Show("Ingresa una categoria valida", "Error al ingresar los datos", BTN);
+                                                        }
                                                     }
                                                 }
                                             }
