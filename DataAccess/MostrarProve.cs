@@ -42,5 +42,15 @@ namespace DataAccess
             comando.ExecuteNonQuery();
             conexion.Close();
         }
+
+        public void update(string z1,string z2,string z3,string z4)
+        {
+            MySqlConnection conexion = Conexion.getConexion();
+            conexion.Open();
+            bb = "update provee set nombre='" +z2+"'," +"tel='"+z3+"',"+" mail='"+z4+"' where nombre='"+z1+"';";
+            MySqlCommand comando = new MySqlCommand(bb, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+        }
     }
 }

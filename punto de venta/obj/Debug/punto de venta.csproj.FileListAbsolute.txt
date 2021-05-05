@@ -259,3 +259,4 @@ C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punt
 C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.EditarProductos.resources
 C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.EliminarV.resources
 C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.Ventas.resources
+C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.EditarProve.resources
