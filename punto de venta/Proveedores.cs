@@ -50,5 +50,11 @@ namespace punto_de_venta
             String buscar = busc.Text;
             dataGridView1.DataSource = obje.busqueda(buscar);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            EditarProve cc = new EditarProve();
+            cc.Show();
+        }
     }
 }
