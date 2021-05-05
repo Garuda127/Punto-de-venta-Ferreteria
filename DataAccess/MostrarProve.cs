@@ -35,10 +35,12 @@ namespace DataAccess
 
         public void borrar(string bor)
         {
-            bb = "Delete * from provee where nombre= '" + bor + "'" + ";";
             MySqlConnection conexion = Conexion.getConexion();
+            conexion.Open();
+            bb = "delete from provee where nombre = '" + bor + "'" + ";";
             MySqlCommand comando = new MySqlCommand(bb, conexion);
             comando.ExecuteNonQuery();
+            conexion.Close();
         }
     }
 }
