@@ -38,6 +38,16 @@ namespace DataAccess
             return consul;
         }
 
+        DataTable consulta = new DataTable();
+        public DataTable mostrarventas(string name)
+        {
+            MySqlDataAdapter adp = new MySqlDataAdapter("select Nombre,Precio,InVentario from productos where Nombre = '" + name + "'; " +
+                "", getConexion());
+
+            adp.Fill(consulta);
+            return consulta;
+        }
+
         //Aplicar filtros a la informacion
         public DataTable busqueda(string nb, string texto)
         { 
