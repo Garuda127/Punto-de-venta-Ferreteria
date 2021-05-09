@@ -44,6 +44,7 @@ namespace punto_de_venta
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.tablita = new System.Windows.Forms.DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -54,10 +55,13 @@ namespace punto_de_venta
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataGridView1.Location = new System.Drawing.Point(40, 191);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(826, 327);
             this.dataGridView1.TabIndex = 2;
             // 
@@ -80,6 +84,7 @@ namespace punto_de_venta
             this.lbCantidad.Size = new System.Drawing.Size(27, 29);
             this.lbCantidad.TabIndex = 2;
             this.lbCantidad.Text = "0";
+            this.lbCantidad.Click += new System.EventHandler(this.lbCantidad_Click);
             // 
             // label3
             // 
@@ -124,6 +129,7 @@ namespace punto_de_venta
             this.button1.TabIndex = 19;
             this.button1.Text = "Comprar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -208,12 +214,21 @@ namespace punto_de_venta
             // 
             this.tablita.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tablita.Enabled = false;
-            this.tablita.Location = new System.Drawing.Point(405, 246);
+            this.tablita.Location = new System.Drawing.Point(719, 23);
             this.tablita.Name = "tablita";
             this.tablita.RowHeadersVisible = false;
-            this.tablita.Size = new System.Drawing.Size(240, 150);
+            this.tablita.Size = new System.Drawing.Size(163, 118);
             this.tablita.TabIndex = 23;
-            this.tablita.Visible = false;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(533, 154);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 24;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Ventas
             // 
@@ -221,6 +236,7 @@ namespace punto_de_venta
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(894, 631);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.tablita);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox2);
@@ -249,21 +265,21 @@ namespace punto_de_venta
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lbCantidad;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView tablita;
+        private System.Windows.Forms.Button button4;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Label lbCantidad;
+        public System.Windows.Forms.Label lblPrecio;
     }
 }

@@ -24,7 +24,7 @@ namespace punto_de_venta
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Catalogo cata = new Catalogo();
+            Catalogo cata = new Catalogo(this);
             cata.Show();
         }
 
@@ -50,22 +50,139 @@ namespace punto_de_venta
         DatosProdu dp = new DatosProdu();
         int cont = 0;
         double precio = 0;
-
+        public string[,] mat = new string[3,1000];
+        public int cc = 0;
         private void button2_Click(object sender, EventArgs e)
         {
             string tab = textBox1.Text;
 
             tablita.DataSource = dp.mostrarventas(tab);
-            dataGridView1.Rows.Add(tablita.Rows[cont].Cells[0].Value.ToString(),
-            tablita.Rows[cont].Cells[1].Value.ToString(), "1");
-            lbCantidad.Text = (cont + 1) + "";
-            precio += Convert.ToDouble(tablita.Rows[cont].Cells[1].Value.ToString());
-            lblPrecio.Text = precio + "";
-            DataGridViewCell cell = this.dataGridView1.Rows[cont].Cells[0];
-            cell.ToolTipText = "Stock: " + tablita.Rows[cont].Cells[2].Value.ToString();
+            bool sino = false;
+            int n_l = -1;
+            for(int i = 0; i < cc; i++)
+            {
+                    if (mat[0, i] == tablita.Rows[cont].Cells[0].Value.ToString())
+                    {
+                        sino = true;
+                        n_l = i;
+                    MessageBox.Show("X="+mat[0,i]+"==="+ tablita.Rows[cont].Cells[0].Value.ToString(), "asd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+                    }
+            }
+            if (sino)
+            {
+                mat[2, n_l] = (int.Parse(mat[2, n_l]) + 1).ToString();
+                dataGridView1.Rows.Clear();
+                for(int i = 0; i < cc; i++) {
+                    if (int.Parse(mat[2, i]) > 0)
+                    {
+                        dataGridView1.Rows.Add(mat[0, i],
+                mat[1, i], mat[2, i]);
+                        /*DataGridViewCell cell = this.dataGridView1.Rows[cc - 1].Cells[0];
+                        cell.ToolTipText = "Stock: " + tablita.Rows[cont].Cells[2].Value.ToString();*/
+                        
+                    }
+                }
+            }
+            else
+            {
+                mat[0, cc] = tablita.Rows[cont].Cells[0].Value.ToString();
+                mat[1, cc] = tablita.Rows[cont].Cells[1].Value.ToString();
+                mat[2, cc] = (1).ToString();
+                cc++;
+                dataGridView1.Rows.Clear();
+                for (int i = 0; i < cc; i++)
+                {
+                    if (int.Parse(mat[2, i]) > 0)
+                    {
+                        dataGridView1.Rows.Add(mat[0, i],
+                mat[1, i], mat[2, i]);
+                        
+                    }
+                }
+            }
+
+            lbCantidad.Text = calcularArti() + "";
+            lblPrecio.Text = calcularTotal() + "";
+
             cont++;
 
             textBox1.Text = "";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string nombre = "";
+            for(int i =0; i < dataGridView1.Rows.Count; i++)
+            {
+                if (dataGridView1.Rows[i].Selected == true)
+                {
+                    nombre = dataGridView1.Rows[i].Cells[0].Value.ToString();
+                    break;
+                }
+            }            
+            dataGridView1.Rows.Clear();
+            for (int i = 0; i < cc; i++)
+            {
+                if (nombre == mat[0, i])
+                {
+                    mat[2, i] = (int.Parse(mat[2, i]) - 1).ToString();
+                    
+                    lbCantidad.Text = calcularArti() + "";
+                    lblPrecio.Text = calcularTotal() + "";
+                }                
+            }
+            for(int i =0; i < cc; i++)
+            {
+                if (int.Parse(mat[2, i]) > 0)
+                {
+                    dataGridView1.Rows.Add(mat[0, i],
+                mat[1, i], mat[2, i]);
+                    /*DataGridViewCell cell = this.dataGridView1.Rows[cc - 1].Cells[0];
+
+                    cell.ToolTipText = "Stock: " + tablita.Rows[cont].Cells[2].Value.ToString();*/
+                }
+                
+            }
+
+        }
+        public int calcularTotal()
+        {
+            int total = 0;
+            for(int i = 0; i < cc; i++)
+            {
+                total += int.Parse(mat[1, i])*int.Parse(mat[2,i]);
+            }
+            return total;
+        }
+        public int calcularArti()
+        {
+            int total = 0;
+            for (int i = 0; i < cc; i++)
+            {
+                total += int.Parse(mat[2, i]);
+            }
+            return total;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int total = calcularTotal();
+            DateTime myDateTime = DateTime.Now;
+            string fecha = myDateTime.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                   
+                Random rnd = new Random();
+            int id = rnd.Next(1, 10000);
+            VentaDao.VentaDAO vt = new VentaDao.VentaDAO();
+            if (MessageBox.Show("Desea realizar su compra", "Confirma en Acceptar", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                vt.Reg(id, fecha, total);
+           }
+        }
+
+        private void lbCantidad_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
