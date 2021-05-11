@@ -34,7 +34,7 @@ namespace punto_de_venta
             
             MessageBox.Show("Task Assignments");
         }
-        string nombre = "";
+        
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
@@ -43,7 +43,8 @@ namespace punto_de_venta
         int cx = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            int x = 0;
+            int x = -1;
+            string nombre = "";
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
                 if (dataGridView1.Rows[i].Selected == true)
@@ -53,58 +54,71 @@ namespace punto_de_venta
                     break;
                 }
             }
-            
-            DatosProdu dp = new DatosProdu();
-            dataGridView2.DataSource = dp.mostrarventas(nombre);
-            //MessageBox.Show(x+"" + nombre, "asd", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            vt.dataGridView1.Rows.Add(dataGridView2.Rows[0].Cells[0].Value.ToString(), dataGridView2.Rows[0].Cells[1].Value.ToString(), "1");
-            bool sino = false;
-            int n_l = 0;
-            for (int i = 0; i <vt.cc; i++)
+            if (nombre != "")
             {
-                if (vt.mat[0, i] == dataGridView2.Rows[0].Cells[0].Value.ToString())
+                if (int.Parse(dataGridView1.Rows[x].Cells[6].Value.ToString()) > 0)
                 {
-                    sino = true;
-                    n_l = i;                    
-                    break;
-                }
-            }
-            if (sino)
-            {
-                vt.mat[2, n_l] = (int.Parse(vt.mat[2, n_l]) + 1).ToString();
-                vt.dataGridView1.Rows.Clear();
-                for (int i = 0; i < vt.cc; i++)
-                {
-                    if (int.Parse(vt.mat[2, i]) > 0)
+                    DatosProdu dp = new DatosProdu();
+                    dataGridView2.DataSource = dp.mostrarventas(nombre);
+                    //MessageBox.Show(x+"" + nombre, "asd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    vt.dataGridView1.Rows.Add(dataGridView2.Rows[0].Cells[0].Value.ToString(), dataGridView2.Rows[0].Cells[1].Value.ToString(), "1");
+                    bool sino = false;
+                    int n_l = 0;
+                    for (int i = 0; i < vt.cc; i++)
                     {
-                        vt.dataGridView1.Rows.Add(vt.mat[0, i],
-                vt.mat[1, i], vt.mat[2, i]);
-                        /*DataGridViewCell cell = this.dataGridView1.Rows[cc - 1].Cells[0];
-                        cell.ToolTipText = "Stock: " + tablita.Rows[cont].Cells[2].Value.ToString();*/
-
+                        if (vt.mat[0, i] == dataGridView2.Rows[0].Cells[0].Value.ToString())
+                        {
+                            sino = true;
+                            n_l = i;
+                            break;
+                        }
                     }
+                    if (sino)
+                    {
+                        vt.mat[2, n_l] = (int.Parse(vt.mat[2, n_l]) + 1).ToString();
+                        vt.dataGridView1.Rows.Clear();
+                        for (int i = 0; i < vt.cc; i++)
+                        {
+                            if (int.Parse(vt.mat[2, i]) > 0)
+                            {
+                                vt.dataGridView1.Rows.Add(vt.mat[0, i],
+                        vt.mat[1, i], vt.mat[2, i]);
+                                /*DataGridViewCell cell = this.dataGridView1.Rows[cc - 1].Cells[0];
+                                cell.ToolTipText = "Stock: " + tablita.Rows[cont].Cells[2].Value.ToString();*/
+
+                            }
+                        }
+                    }
+                    else
+                    {
+                        vt.mat[0, vt.cc] = dataGridView2.Rows[0].Cells[0].Value.ToString();
+                        vt.mat[1, vt.cc] = dataGridView2.Rows[0].Cells[1].Value.ToString();
+                        vt.mat[2, vt.cc] = (1).ToString();
+                        vt.cc++;
+                        vt.dataGridView1.Rows.Clear();
+                        for (int i = 0; i < vt.cc; i++)
+                        {
+                            if (int.Parse(vt.mat[2, i]) > 0)
+                            {
+                                vt.dataGridView1.Rows.Add(vt.mat[0, i],
+                        vt.mat[1, i], vt.mat[2, i]);
+
+                            }
+                        }
+                    }
+                    vt.lbCantidad.Text = vt.calcularArti() + "";
+                    vt.lblPrecio.Text = vt.calcularTotal() + "";
+                    cx++;
+                }
+                else
+                {
+                    MessageBox.Show("No hay stock", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                vt.mat[0, vt.cc] = dataGridView2.Rows[0].Cells[0].Value.ToString();
-                vt.mat[1, vt.cc] = dataGridView2.Rows[0].Cells[1].Value.ToString();
-                vt.mat[2, vt.cc] = (1).ToString();
-                vt.cc++;
-                vt.dataGridView1.Rows.Clear();
-                for (int i = 0; i < vt.cc; i++)
-                {
-                    if (int.Parse(vt.mat[2, i]) > 0)
-                    {
-                        vt.dataGridView1.Rows.Add(vt.mat[0, i],
-                vt.mat[1, i], vt.mat[2, i]);
-
-                    }
-                }
+                MessageBox.Show("No seleccio nada", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            vt.lbCantidad.Text = vt.calcularArti() + "";
-            vt.lblPrecio.Text = vt.calcularTotal() + "";
-            cx++;
         }
     }
 }

@@ -11,7 +11,7 @@ namespace DataAccess
         public class VentaDAO : Conexion
         {
 
-            public void Reg(int id, string fecha, int total)  //registra venta en la bd
+            public void Reg(int id, string fecha, double total)  //registra venta en la bd
             {
                 MySqlConnection conexion = Conexion.getConexion();
                 conexion.Open();
@@ -33,7 +33,7 @@ namespace DataAccess
                     using (var command = new MySqlCommand())
                     {
                         command.Connection = connection;
-                        command.CommandText = "SELECT * FROM productos";
+                        command.CommandText = "SELECT * FROM productos WHERE InVentario > 0";
                         command.CommandType = CommandType.Text;
                         MySqlDataReader reader = command.ExecuteReader();
                         ArrayList myAl = new ArrayList();

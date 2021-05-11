@@ -102,7 +102,7 @@ namespace punto_de_venta
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(118, 144);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(263, 35);
+            this.textBox1.Size = new System.Drawing.Size(238, 35);
             this.textBox1.TabIndex = 10;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -163,10 +163,10 @@ namespace punto_de_venta
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::punto_de_venta.Properties.Resources.carrito_de_compras;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(396, 144);
+            this.button2.Location = new System.Drawing.Point(362, 143);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(123, 35);
             this.button2.TabIndex = 22;
@@ -219,14 +219,16 @@ namespace punto_de_venta
             this.tablita.RowHeadersVisible = false;
             this.tablita.Size = new System.Drawing.Size(163, 118);
             this.tablita.TabIndex = 23;
+            this.tablita.Visible = false;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(533, 154);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(491, 144);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(117, 35);
             this.button4.TabIndex = 24;
-            this.button4.Text = "button4";
+            this.button4.Text = "Borrar";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 

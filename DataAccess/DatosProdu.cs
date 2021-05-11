@@ -75,5 +75,18 @@ namespace DataAccess
             adp2.Fill(consul2);
             return consul2;
         }
+        public  void restador(string Producto,int Cantidad)
+        {
+            MySqlConnection conexion = Conexion.getConexion();
+            conexion.Open();
+
+            string sql = "update productos set InVentario = InVentario-'" + Cantidad + "' where Nombre = '" + Producto + "'";
+            MySqlCommand comando = new MySqlCommand(sql, conexion);
+            
+            comando.ExecuteNonQuery();
+            conexion.Close();
+
+
+        }
     }
 }
