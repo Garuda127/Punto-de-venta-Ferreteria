@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "DuyXOXKKCCJ9FgQKmu2YRm8S7q2R3HYIDzffbxG1DLWUB08sLfepHCRfspXrtCibbHzJi4TwKKk5qle3o6lKxg==",
+  "dgSpecHash": "fXLS6jrl3K2VramznKtT+9IlCxiyOXhTboreM0nbnj9JreWIHXkonLHItll1e+oEyufEJi2LnEik/CKU0vFDmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jova2811\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj",
+  "projectFilePath": "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Jova2811\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Jova2811\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Herfesto\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Herfesto\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

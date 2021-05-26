@@ -314,3 +314,5 @@ C:\Users\Jova2811\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\
 C:\Users\Jova2811\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto de venta.csproj.CopyComplete
 C:\Users\Jova2811\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto de venta.exe
 C:\Users\Jova2811\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto de venta.pdb
+C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.EditarProductos.resources
+C:\Users\Herfesto\Documents\GitHub\Punto-de-venta-Ferreteria\punto de venta\obj\Debug\punto_de_venta.EditarProve.resources

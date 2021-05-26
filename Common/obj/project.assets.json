@@ -180,19 +180,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jova2811\\.nuget\\packages\\": {}
+    "C:\\Users\\Herfesto\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jova2811\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\Users\\Jova2811\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj",
-      "packagesPath": "C:\\Users\\Jova2811\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jova2811\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\obj\\",
+      "projectPath": "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj",
+      "packagesPath": "C:\\Users\\Herfesto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jova2811\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Herfesto\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

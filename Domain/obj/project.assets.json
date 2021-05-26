@@ -1277,19 +1277,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jova2811\\.nuget\\packages\\": {}
+    "C:\\Users\\Herfesto\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jova2811\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\Jova2811\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\Jova2811\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jova2811\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Domain\\obj\\",
+      "projectPath": "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\Herfesto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jova2811\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Herfesto\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1302,11 +1302,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Jova2811\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\Jova2811\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj"
+            "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj"
             },
-            "C:\\Users\\Jova2811\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Jova2811\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Herfesto\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj"
             }
           }
         }
