@@ -37,6 +37,8 @@ namespace punto_de_venta
             this.TBBus = new System.Windows.Forms.TextBox();
             this.Actual = new System.Windows.Forms.Button();
             this.CBFIL = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tab)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,6 +97,7 @@ namespace punto_de_venta
             this.tab.Name = "tab";
             this.tab.Size = new System.Drawing.Size(376, 346);
             this.tab.TabIndex = 3;
+            this.tab.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tab_CellContentClick);
             // 
             // BuscarBTN
             // 
@@ -111,9 +114,9 @@ namespace punto_de_venta
             // 
             // TBBus
             // 
-            this.TBBus.Location = new System.Drawing.Point(308, 37);
+            this.TBBus.Location = new System.Drawing.Point(368, 49);
             this.TBBus.Name = "TBBus";
-            this.TBBus.Size = new System.Drawing.Size(249, 20);
+            this.TBBus.Size = new System.Drawing.Size(189, 20);
             this.TBBus.TabIndex = 6;
             // 
             // Actual
@@ -131,6 +134,7 @@ namespace punto_de_venta
             // 
             // CBFIL
             // 
+            this.CBFIL.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBFIL.FormattingEnabled = true;
             this.CBFIL.Items.AddRange(new object[] {
             "ID_Producto",
@@ -138,10 +142,34 @@ namespace punto_de_venta
             "nombre",
             "Marca",
             "Proteccion"});
-            this.CBFIL.Location = new System.Drawing.Point(181, 37);
+            this.CBFIL.Location = new System.Drawing.Point(181, 48);
             this.CBFIL.Name = "CBFIL";
-            this.CBFIL.Size = new System.Drawing.Size(121, 21);
+            this.CBFIL.Size = new System.Drawing.Size(174, 21);
             this.CBFIL.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Gray;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F);
+            this.label1.ForeColor = System.Drawing.SystemColors.Menu;
+            this.label1.Location = new System.Drawing.Point(177, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(178, 22);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Selecciona el filtro";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Gray;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F);
+            this.label2.ForeColor = System.Drawing.SystemColors.Menu;
+            this.label2.Location = new System.Drawing.Point(373, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(134, 22);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Palabra clave";
             // 
             // Productos
             // 
@@ -149,6 +177,8 @@ namespace punto_de_venta
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(573, 453);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.CBFIL);
             this.Controls.Add(this.Actual);
             this.Controls.Add(this.TBBus);
@@ -179,5 +209,7 @@ namespace punto_de_venta
         private System.Windows.Forms.TextBox TBBus;
         private System.Windows.Forms.Button Actual;
         private System.Windows.Forms.ComboBox CBFIL;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

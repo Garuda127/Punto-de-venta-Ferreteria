@@ -33,18 +33,23 @@ namespace punto_de_venta
         {
             EditarProductos Frm = new EditarProductos();
             Frm.Show();
+
         }
 
         private void EliminarBTN_Click(object sender, EventArgs e)
         {
-            if (!TBBus.Text.Equals(""))
+            
+            string nombre = "";
+            for (int i = 0; i < tab.Rows.Count; i++)
             {
-                DP.eliminar(CBFIL.Text, TBBus.Text);
+                if (tab.Rows[i].Selected == true)
+                {
+                    nombre = tab.Rows[i].Cells[0].Value.ToString();
+                    break;
+                }
             }
-            else
-            {
-                MessageBox.Show("Ingresa una palabra clabe o digito", "Error al ingresar los datos", BTN);
-            }
+            DP.eliminar(nombre);
+            tab.DataSource = DP.mostrar();
         }
 
         private void BuscarBTN_Click(object sender, EventArgs e)
@@ -68,6 +73,11 @@ namespace punto_de_venta
         }
 
         private void Productos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tab_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

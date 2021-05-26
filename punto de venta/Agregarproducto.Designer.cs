@@ -141,6 +141,7 @@ namespace punto_de_venta
             this.Numst.Name = "Numst";
             this.Numst.Size = new System.Drawing.Size(339, 20);
             this.Numst.TabIndex = 12;
+            this.Numst.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numst_KeyPress);
             // 
             // Texarea
             // 
@@ -195,9 +196,13 @@ namespace punto_de_venta
             this.texprecio.Name = "texprecio";
             this.texprecio.Size = new System.Drawing.Size(337, 20);
             this.texprecio.TabIndex = 15;
+            this.texprecio.Text = "0";
+            this.texprecio.TextChanged += new System.EventHandler(this.texprecio_TextChanged);
+            this.texprecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texprecio_KeyPress);
             // 
             // CBCatego
             // 
+            this.CBCatego.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBCatego.FormattingEnabled = true;
             this.CBCatego.Items.AddRange(new object[] {
             "Herramientas",
@@ -236,7 +241,6 @@ namespace punto_de_venta
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AgregarProducto";
-            this.Opacity = 0.9D;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar producto";
