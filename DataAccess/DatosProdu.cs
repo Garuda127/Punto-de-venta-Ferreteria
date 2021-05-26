@@ -59,18 +59,18 @@ namespace DataAccess
         }
 
         //Se elimina de la base de datos
-        public DataTable eliminar(string nb,string texto)
+        public DataTable eliminar(string id)
         {
-            MySqlDataAdapter adp2 = new MySqlDataAdapter("Delete from productos where " + nb + " = '" + texto + "'" + "; ", getConexion());
+            MySqlDataAdapter adp2 = new MySqlDataAdapter("Delete from productos where ID_producto = '" + id + "'" + "; ", getConexion());
             DataTable consul2 = new DataTable();
             adp2.Fill(consul2);
             return consul2;
         }
 
         //Se realiza la edicion de datos
-        public DataTable editar(string Columna, string Modificar, string Producto)
+        public DataTable editar(string Columna, string Modificar, string IDProducto)
         {
-            MySqlDataAdapter adp2 = new MySqlDataAdapter("update productos set "+ Columna + " = "+ Modificar + " where ID_producto = "+ Producto + ";", getConexion());
+            MySqlDataAdapter adp2 = new MySqlDataAdapter("update productos set "+ Columna + " = '"+ Modificar + "' where ID_producto = "+ IDProducto + ";", getConexion());
             DataTable consul2 = new DataTable();
             adp2.Fill(consul2);
             return consul2;
