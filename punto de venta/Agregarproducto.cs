@@ -94,7 +94,6 @@ namespace punto_de_venta
             
             if (!CBCat.Equals(""))
             {
-                MessageBox.Show("Faltan los siguientes datos \n" + CBCat, "Error", BTN);
                 cb++;
                 tf = true;
                 }
