@@ -63,7 +63,7 @@ namespace punto_de_venta
             }
             else
             {
-                MessageBox.Show("Ingresa una palabra clabe o digito", "Error al ingresar los datos", BTN);
+                MessageBox.Show("Ingresa una palabra clave o digito", "Error al ingresar los datos", BTN);
             }
         }
 
@@ -72,14 +72,10 @@ namespace punto_de_venta
             tab.DataSource = DP.mostrar();
         }
 
-        private void Productos_Load(object sender, EventArgs e)
+        private void Limpiar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void tab_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            TBBus.Text = "";
+            tab.DataSource = DP.mostrar();
         }
     }
 }

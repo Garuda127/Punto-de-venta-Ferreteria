@@ -196,7 +196,6 @@ namespace punto_de_venta
             this.texprecio.Name = "texprecio";
             this.texprecio.Size = new System.Drawing.Size(337, 20);
             this.texprecio.TabIndex = 15;
-            this.texprecio.Text = "0";
             this.texprecio.TextChanged += new System.EventHandler(this.texprecio_TextChanged);
             this.texprecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texprecio_KeyPress);
             // 
