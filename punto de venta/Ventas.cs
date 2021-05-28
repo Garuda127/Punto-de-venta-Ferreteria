@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace punto_de_venta
 {
@@ -120,7 +121,35 @@ namespace punto_de_venta
                 MessageBox.Show("No seleccio nada", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        int cctxt = 0;
+        string path = "";
+        public void generarreporte()
+        {if(path == "")
+            {
+                using (var fbd = new FolderBrowserDialog())
+                {
+                    DialogResult result = fbd.ShowDialog();
+                    if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
+                    {
+                        path = fbd.SelectedPath + "\\";
+                    }
+                }
+            }
+            
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(path+"R"+cctxt+".txt"))
+            {
+                file.WriteLine("Ferreteria X");
+                file.WriteLine("==================");
+                for (int i =0;i<cc;i++)
+                {
+                    file.WriteLine("Articulo: "+mat[0,i]+"== Cantidad: "+mat[2,i]+"== Valor: "+mat[1,i]);
+                }
+                file.WriteLine("==================");
+                file.WriteLine("Total: " + calcularTotal());
+                
+            }
+            cctxt++;
+        }
         private void button4_Click(object sender, EventArgs e)
         {
             string nombre = "";
@@ -134,6 +163,7 @@ namespace punto_de_venta
             }
             if (nombre != "")
             {
+                
                 dataGridView1.Rows.Clear();
                 for (int i = 0; i < cc; i++)
                 {
@@ -184,26 +214,33 @@ namespace punto_de_venta
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double total = calcularTotal();
-            DateTime myDateTime = DateTime.Now;
-            string fecha = myDateTime.ToString("yyyy-MM-dd HH:mm:ss.fff");
-                   
-                Random rnd = new Random();
-            int id = rnd.Next(1, 10000);
-            VentaDao.VentaDAO vt = new VentaDao.VentaDAO();
-            if (MessageBox.Show("Desea realizar su compra", "Confirma en Acceptar", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (cc == 0)
             {
-                vt.Reg(id, fecha, total);
-           }
-            for(int i=0;i < cc; i++)
-            {
-                dp.restador(mat[0, i],int.Parse(mat[2,i]));
+                MessageBox.Show("Selecciona un articulo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            dataGridView1.Rows.Clear();
-            mat = new string[3, 1000];
-            cc = 0;
-            lbCantidad.Text = calcularArti() + "";
-            lblPrecio.Text = calcularTotal() + "";
+            else
+            {
+                double total = calcularTotal();
+                DateTime myDateTime = DateTime.Now;
+                string fecha = myDateTime.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                Random rnd = new Random();
+                int id = rnd.Next(1, 10000);
+                VentaDao.VentaDAO vt = new VentaDao.VentaDAO();
+                if (MessageBox.Show("Desea realizar su compra", "Confirma en Acceptar", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    generarreporte();
+                    vt.Reg(id, fecha, total);
+                }
+                for (int i = 0; i < cc; i++)
+                {
+                    dp.restador(mat[0, i], int.Parse(mat[2, i]));
+                }
+                dataGridView1.Rows.Clear();
+                mat = new string[3, 1000];
+                cc = 0;
+                lbCantidad.Text = calcularArti() + "";
+                lblPrecio.Text = calcularTotal() + "";
+            }
         }
 
         private void lbCantidad_Click(object sender, EventArgs e)
