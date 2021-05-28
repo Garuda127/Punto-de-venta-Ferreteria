@@ -27,6 +27,7 @@ namespace punto_de_venta
         
         private void AgregarBTN_Click(object sender, EventArgs e)
         {
+            String val = "";
             DatosProdu DP = new DatosProdu();
             MessageBoxButtons BTN = MessageBoxButtons.OK;
             String name = texnombre.Text;
@@ -34,115 +35,140 @@ namespace punto_de_venta
             double prec = Double.Parse(texprecio.Text);
             String desc = Texarea.Text;
             int stoc = (int)Numst.Value;
-            string CBCat = CBCatego.Text;
-            
+            int CBCat = CBCatego.SelectedIndex+1;
             int cb = 0;
-            Double cos;
             Boolean tf;
             if (!name.Equals(""))
             {
-                if (!marc.Equals(""))
-                {
-                    if (!prec.Equals(""))
-                    {
-                        cos = Convert.ToDouble(prec);
-
-                        if (!desc.Equals(""))
-                        {
-                            if (!stoc.Equals(""))
-                            {
-                                tf = true;
-                                if (!CBCat.Equals(""))
-                                {
-                                    if (CBCat.Equals("Herramientas"))
-                                    {
-                                        tf = true;
-                                        cb = 1;
-                                    }
-                                    else
-                                    {
-                                        if (CBCat.Equals("Material electrico"))
-                                        {
-                                            tf = true;
-                                            cb = 2;
-                                        }
-                                        else
-                                        {
-                                            if (CBCat.Equals("Material para plomeria"))
-                                            {
-                                                tf = true;
-                                                cb = 3;
-                                            }
-                                            else
-                                            {
-                                                if (CBCat.Equals("Hogar"))
-                                                {
-                                                    tf = true;
-                                                    cb = 4;
-                                                }
-                                                else
-                                                {
-                                                    if (CBCat.Equals("Jardin"))
-                                                    {
-                                                        tf = true;
-                                                        cb = 5;
-                                                    }
-                                                    else
-                                                    {
-                                                        if (CBCat.Equals("Proteccion"))
-                                                        {
-                                                            tf = true;
-                                                            cb = 6;
-                                                        }
-                                                        else
-                                                        {
-                                                            tf = false;
-                                                            MessageBox.Show("Ingresa una categoria valida", "Error al ingresar los datos", BTN);
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                tf = false;
-                                MessageBox.Show("Ingresa un valor entero en Stock", "Error al ingresar los datos", BTN);
-                            }
-                        }
-                        else
-                        {
-                            tf = false;
-                            MessageBox.Show("Ingresa un valor valido en el espacio de la Descripción", "Error al ingresar los datos", BTN);
-                        }
-                    }
-                    else
-                    {
-                        tf = false;
-                        MessageBox.Show("Ingresa un valor decimal o entero en el espacio de Precio", "Error al ingresar los datos", BTN);
-                    }
-                }
-                else
-                {
-                    tf = false;
-                    MessageBox.Show("Ingresa un valor valido en el espacio de Marca", "Error al ingresar los datos", BTN);
-                }
+                cb++;
+                tf = true;
+            }
+            else
+            {
+                 tf = false;
+                 val += "Ingresa un valor valido en el espacio de Nombre \n";
+            }
+            
+            if (!marc.Equals("")) {
+                cb++;
+                tf = true;
+        }
+            else
+            {
+                 tf = false;
+                 val += "Ingresa un valor valido en el espacio de Marca \n";
+            }    
+            if (!prec.Equals(""))
+            {
+                cb++;
+                tf = true;
             }
             else
             {
                 tf = false;
-                MessageBox.Show("Ingresa un valor valido en el espacio de nombre", "Error al ingresar los datos", BTN);
+                val += "Ingresa un valor valido en el espacio de Precio \n";
             }
-            if (tf)
+            
+
+            if (!desc.Equals(""))
+            {
+                cb++;
+                tf = true;
+            }
+            else
+            {
+                tf = false;
+                val += "Ingresa un valor valido en el espacio de Descripción \n";
+            }
+
+            if (!stoc.Equals(""))
+            {
+                cb++;
+                tf = true;
+            }
+            else
+            {
+                tf = false;
+                val += "Ingresa un valor valido en el espacio de Stock \n";
+            }
+            
+            if (!CBCat.Equals(""))
+            {
+                cb++;
+                tf = true;
+                }
+            else
+                {
+                    tf = false;
+                    val += "Ingresa un valor valido en el espacio de Categoria \n";
+                }
+  
+      
+            if (tf & cb==6)
 
             {
-                DP.Reg(name,marc,cb,prec,desc,stoc);
+                DP.Reg(name,marc, CBCat, prec,desc,stoc);
 
                 MessageBox.Show("Los datos se han agregado a la base de datos", "Correcto", BTN);
                 this.Close();
+
+            }
+            else
+            {
+                MessageBox.Show("Faltan los siguientes datos \n" + val, "Error", BTN);
+            }
+        }
+
+        private void texprecio_TextChanged(object sender, EventArgs e)
+        {
             
+        }
+        int cc;
+        private void texprecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                if (Char.IsPunctuation(e.KeyChar) & cc == 0)
+                {
+                    cc++;
+                    e.Handled = false;
+
+                }
+                else
+                {
+                    if (Char.IsControl(e.KeyChar)) //permitir teclas de control como retroceso
+                    {
+                        e.Handled = false;
+                    }
+                    else
+                    {
+                        //el resto de teclas pulsadas se desactivan
+                        e.Handled = true;
+                    }
+                }
+
+            }
+        }
+
+        private void Numst_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+     if (Char.IsControl(e.KeyChar)) //permitir teclas de control como retroceso
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                //el resto de teclas pulsadas se desactivan
+                e.Handled = true;
             }
         }
     }

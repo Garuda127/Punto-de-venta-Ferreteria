@@ -92,23 +92,20 @@ namespace punto_de_venta
             // 
             // CBColumn
             // 
+            this.CBColumn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBColumn.FormattingEnabled = true;
             this.CBColumn.Items.AddRange(new object[] {
-            "ID_Categorias",
-            "",
             "Nombre",
-            "",
             "Marca",
-            "",
-            "Precio",
-            "",
             "Descripcion",
-            "",
-            "InVentario"});
+            "InVentario",
+            "ID_Categorias",
+            "Precio"});
             this.CBColumn.Location = new System.Drawing.Point(188, 67);
             this.CBColumn.Name = "CBColumn";
             this.CBColumn.Size = new System.Drawing.Size(192, 21);
             this.CBColumn.TabIndex = 7;
+            this.CBColumn.MouseClick += new System.Windows.Forms.MouseEventHandler(this.CBColumn_MouseClick);
             // 
             // AgregarBTN
             // 
@@ -144,6 +141,7 @@ namespace punto_de_venta
             this.TBDato.Name = "TBDato";
             this.TBDato.Size = new System.Drawing.Size(192, 20);
             this.TBDato.TabIndex = 16;
+            this.TBDato.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TBDato_KeyPress);
             // 
             // NUDProd
             // 
@@ -151,6 +149,7 @@ namespace punto_de_venta
             this.NUDProd.Name = "NUDProd";
             this.NUDProd.Size = new System.Drawing.Size(192, 20);
             this.NUDProd.TabIndex = 17;
+            this.NUDProd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NUDProd_KeyPress);
             // 
             // EditarProductos
             // 

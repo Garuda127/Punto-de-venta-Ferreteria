@@ -26,5 +26,10 @@ namespace punto_de_venta
             lblHora.Text = DateTime.Now.ToString("hh:mm:ss");
             lblFecha.Text = DateTime.Now.ToLongDateString();
         }
+
+        private void lblFecha_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

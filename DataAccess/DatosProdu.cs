@@ -28,6 +28,7 @@ namespace DataAccess
             conexion.Close();
         }
 
+
         //Realizar
         public DataTable mostrar()
         {
@@ -36,6 +37,16 @@ namespace DataAccess
             DataTable consul = new DataTable();
             adp.Fill(consul);
             return consul;
+        }
+
+        DataTable consulta = new DataTable();
+        public DataTable mostrarventas(string name)
+        {
+            MySqlDataAdapter adp = new MySqlDataAdapter("select Nombre,Precio,InVentario from productos where Nombre = '" + name + "'; " +
+                "", getConexion());
+
+            adp.Fill(consulta);
+            return consulta;
         }
 
         //Aplicar filtros a la informacion
@@ -48,21 +59,34 @@ namespace DataAccess
         }
 
         //Se elimina de la base de datos
-        public DataTable eliminar(string nb,string texto)
+        public DataTable eliminar(string id)
         {
-            MySqlDataAdapter adp2 = new MySqlDataAdapter("Delete from productos where " + nb + " = '" + texto + "'" + "; ", getConexion());
+            MySqlDataAdapter adp2 = new MySqlDataAdapter("Delete from productos where ID_producto = '" + id + "'" + "; ", getConexion());
             DataTable consul2 = new DataTable();
             adp2.Fill(consul2);
             return consul2;
         }
 
         //Se realiza la edicion de datos
-        public DataTable editar(string Columna, string Modificar, string Producto)
+        public DataTable editar(string Columna, string Modificar, string IDProducto)
         {
-            MySqlDataAdapter adp2 = new MySqlDataAdapter("update productos set "+ Columna + " = "+ Modificar + " where ID_producto = "+ Producto + ";", getConexion());
+            MySqlDataAdapter adp2 = new MySqlDataAdapter("update productos set "+ Columna + " = '"+ Modificar + "' where ID_producto = "+ IDProducto + ";", getConexion());
             DataTable consul2 = new DataTable();
             adp2.Fill(consul2);
             return consul2;
+        }
+        public  void restador(string Producto,int Cantidad)
+        {
+            MySqlConnection conexion = Conexion.getConexion();
+            conexion.Open();
+
+            string sql = "update productos set InVentario = InVentario-'" + Cantidad + "' where Nombre = '" + Producto + "'";
+            MySqlCommand comando = new MySqlCommand(sql, conexion);
+            
+            comando.ExecuteNonQuery();
+            conexion.Close();
+
+
         }
     }
 }
