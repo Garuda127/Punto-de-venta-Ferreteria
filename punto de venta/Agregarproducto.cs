@@ -32,10 +32,10 @@ namespace punto_de_venta
             MessageBoxButtons BTN = MessageBoxButtons.OK;
             String name = texnombre.Text;
             String marc = texMarca.Text;
-            double prec = Double.Parse(texprecio.Text);
+            double prec = 0;
             String desc = Texarea.Text;
             int stoc = (int)Numst.Value;
-            int CBCat = CBCatego.SelectedIndex+1;
+            int CBCat = CBCatego.SelectedIndex;
             int cb = 0;
             Boolean tf;
             if (!name.Equals(""))
@@ -58,10 +58,11 @@ namespace punto_de_venta
                  tf = false;
                  val += "Ingresa un valor valido en el espacio de Marca \n";
             }    
-            if (!prec.Equals(""))
+            if (!texprecio.Text.Equals(""))
             {
                 cb++;
                 tf = true;
+                prec = Double.Parse(texprecio.Text);
             }
             else
             {
@@ -92,7 +93,7 @@ namespace punto_de_venta
                 val += "Ingresa un valor valido en el espacio de Stock \n";
             }
             
-            if (!CBCat.Equals(""))
+            if (CBCat>=0 & CBCat<=4)
             {
                 cb++;
                 tf = true;
@@ -107,7 +108,7 @@ namespace punto_de_venta
             if (tf & cb==6)
 
             {
-                DP.Reg(name,marc, CBCat, prec,desc,stoc);
+                DP.Reg(name,marc, (CBCat+1), prec,desc,stoc);
 
                 MessageBox.Show("Los datos se han agregado a la base de datos", "Correcto", BTN);
                 this.Close();
