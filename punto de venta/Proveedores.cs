@@ -47,8 +47,16 @@ namespace punto_de_venta
 
         private void Buscarbtn_Click(object sender, EventArgs e)
         {
-            String buscar = busc.Text;
-            dataGridView1.DataSource = obje.busqueda(buscar);
+            if (busc.Text == "")
+            {
+                MessageBox.Show("Campo de busqueda vacío");
+            }
+            else
+            {
+                String buscar = busc.Text;
+                dataGridView1.DataSource = obje.busqueda(buscar);
+            }
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
