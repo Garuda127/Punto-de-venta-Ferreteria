@@ -56,6 +56,7 @@ namespace punto_de_venta
             }
             if (nombre != "")
             {
+                MessageBox.Show("Se ah agregado", "Agrego", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 if (int.Parse(dataGridView1.Rows[x].Cells[6].Value.ToString()) > 0)
                 {
                     DatosProdu dp = new DatosProdu();

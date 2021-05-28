@@ -61,7 +61,7 @@ namespace punto_de_venta
             if (tab != "")
             {
 
-
+                
                 tablita.DataSource = dp.mostrarventas(tab);
                 bool sino = false;
                 int n_l = -1;
@@ -139,10 +139,10 @@ namespace punto_de_venta
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(path+"R"+cctxt+".txt"))
             {
                 file.WriteLine("Ferreteria X");
-                file.WriteLine("==================");
+                file.WriteLine("Nombre\t\tCantidad\tPrecio");
                 for (int i =0;i<cc;i++)
                 {
-                    file.WriteLine("Articulo: "+mat[0,i]+"== Cantidad: "+mat[2,i]+"== Valor: "+mat[1,i]);
+                    file.WriteLine(mat[0,i]+ "\t    " + mat[2,i]+ "\t\t" + mat[1,i]);
                 }
                 file.WriteLine("==================");
                 file.WriteLine("Total: " + calcularTotal());
@@ -244,6 +244,11 @@ namespace punto_de_venta
         }
 
         private void lbCantidad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
