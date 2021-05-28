@@ -20,29 +20,46 @@ namespace punto_de_venta
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            string c1, c2, c3, c4;
-
-            c1 = busqueda.Text;
-            c2 = nombre.Text;
-            c3 = tel.Text;
-            c4 = mail.Text;
-
-            MessageBoxButtons boton = MessageBoxButtons.YesNo;
-            DialogResult dr = MessageBox.Show("¿Desea editar este registro?", "Editar", boton);
-
-
-            if (dr == DialogResult.Yes)
+            if (busqueda.Text==""|nombre.Text==""|tel.Text==""|mail.Text=="")
             {
-                MostrarProve cc = new MostrarProve();
-                cc.update(c1,c2,c3,c4);
-                MessageBox.Show("Editado");
-                this.Close();
+                MessageBox.Show("Falta llenar campos");
             }
-
-            if (dr == DialogResult.No)
+            else
             {
-                this.Close();
+                string c1, c2, c3, c4;
+
+                c1 = busqueda.Text;
+                c2 = nombre.Text;
+                c3 = tel.Text;
+                c4 = mail.Text;
+
+                MessageBoxButtons boton = MessageBoxButtons.YesNo;
+                DialogResult dr = MessageBox.Show("¿Desea editar este registro?", "Editar", boton);
+
+
+                if (dr == DialogResult.Yes)
+                {
+                    MostrarProve cc = new MostrarProve();
+                    cc.update(c1, c2, c3, c4);
+                    MessageBox.Show("Editado");
+                    this.Close();
+                }
+
+                if (dr == DialogResult.No)
+                {
+                    this.Close();
+                }
+            }
+            
+        }
+
+        private void tel_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se permiten numeros en el campo telefono", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
             }
         }
     }

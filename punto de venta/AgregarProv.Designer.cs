@@ -74,6 +74,7 @@ namespace punto_de_venta
             this.txt2.Name = "txt2";
             this.txt2.Size = new System.Drawing.Size(137, 20);
             this.txt2.TabIndex = 3;
+            this.txt2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt2_KeyPress);
             // 
             // label1
             // 

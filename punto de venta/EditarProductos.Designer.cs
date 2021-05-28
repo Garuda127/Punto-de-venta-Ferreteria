@@ -170,6 +170,7 @@ namespace punto_de_venta
             this.KeyPreview = true;
             this.Name = "EditarProductos";
             this.Text = "EditarProductos";
+            this.Load += new System.EventHandler(this.EditarProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.NUDProd)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
