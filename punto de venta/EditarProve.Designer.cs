@@ -89,6 +89,7 @@ namespace punto_de_venta
             this.tel.Name = "tel";
             this.tel.Size = new System.Drawing.Size(327, 20);
             this.tel.TabIndex = 5;
+            this.tel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tel_KeyPress);
             // 
             // mail
             // 

@@ -108,6 +108,11 @@ namespace punto_de_venta
                 e.Handled = true;
             }
         }
+
+        private void EditarProductos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
