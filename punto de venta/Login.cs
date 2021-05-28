@@ -93,9 +93,9 @@ namespace punto_de_venta
             //    cc.Show();
             //}
 
-            if (txtuser.Text != "Username" && txtuser.TextLength > 2)
+            if (txtuser.Text != "USUARIO" && txtuser.TextLength > 2)
             {
-                if (txtpass.Text != "Password")
+                if (txtpass.Text != "CONTRASEÑA")
                 {
                     UserModel user = new UserModel();
                     var validLogin = user.LoginUser(txtuser.Text, txtpass.Text);
@@ -108,15 +108,15 @@ namespace punto_de_venta
                     }
                     else
                     {
-                        msgError("Incorrect username or password entered. \n   Please try again.");
-                        txtpass.Text = "Password";
+                        msgError("Nombre de usuario y/o contraseña incorrectos. \n   Intenta de nuevo.");
+                        txtpass.Text = "CONTRASEÑA";
                         txtpass.UseSystemPasswordChar = false;
                         txtuser.Focus();
                     }
                 }
-                else msgError("Please enter password.");
+                else msgError("Porfavor Ingresa la contraseña.");
             }
-            else msgError("Please enter username.");
+            else msgError("Porfavor Ingresa el nombre de usuario.");
         }
         private void msgError(string msg)
         {
