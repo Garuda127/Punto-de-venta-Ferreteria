@@ -20,24 +20,30 @@ namespace punto_de_venta
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBoxButtons boton = MessageBoxButtons.YesNo;
-            DialogResult dr = MessageBox.Show("¿Desea borrar este registro?","Borrar",boton);
-
-
-            if (dr==DialogResult.Yes)
+            if (textBox1.Text=="")
             {
-                string borr = textBox1.Text;
-                MostrarProve cc = new MostrarProve();
-                cc.borrar(borr);
-                MessageBox.Show("Borrado");
-                this.Close();
+                MessageBox.Show("Falta llenar campo");
             }
-
-            if (dr==DialogResult.No)
+            else
             {
-                this.Close();
-            }
+                MessageBoxButtons boton = MessageBoxButtons.YesNo;
+                DialogResult dr = MessageBox.Show("¿Desea borrar este registro?", "Borrar", boton);
 
+
+                if (dr == DialogResult.Yes)
+                {
+                    string borr = textBox1.Text;
+                    MostrarProve cc = new MostrarProve();
+                    cc.borrar(borr);
+                    MessageBox.Show("Borrado");
+                    this.Close();
+                }
+
+                if (dr == DialogResult.No)
+                {
+                    this.Close();
+                }
+            }
         }
     }
 }

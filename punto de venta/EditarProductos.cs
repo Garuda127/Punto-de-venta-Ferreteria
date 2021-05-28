@@ -31,5 +31,10 @@ namespace punto_de_venta
             string n =  NUDProd.Value + "";
             DP.editar(tx,tx2,n);
         }
+
+        private void EditarProductos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
