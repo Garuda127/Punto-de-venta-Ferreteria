@@ -45,6 +45,7 @@ namespace punto_de_venta
             this.button3 = new System.Windows.Forms.Button();
             this.tablita = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -232,12 +233,25 @@ namespace punto_de_venta
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(121, 121);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(176, 20);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Nombre del producto";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(894, 631);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.tablita);
             this.Controls.Add(this.button2);
@@ -283,5 +297,6 @@ namespace punto_de_venta
         public System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.Label lbCantidad;
         public System.Windows.Forms.Label lblPrecio;
+        private System.Windows.Forms.Label label2;
     }
 }
