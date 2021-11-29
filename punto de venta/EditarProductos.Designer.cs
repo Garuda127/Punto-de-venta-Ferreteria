@@ -169,6 +169,7 @@ namespace punto_de_venta
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Name = "EditarProductos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditarProductos";
             this.Load += new System.EventHandler(this.EditarProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.NUDProd)).EndInit();

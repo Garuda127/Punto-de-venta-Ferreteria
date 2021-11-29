@@ -58,3 +58,15 @@ E:\LPMexcu\Documents\Punto_de_venta\DataAccess\obj\Debug\netstandard2.0\DataAcce
 E:\LPMexcu\Documents\Punto_de_venta\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
 E:\LPMexcu\Documents\Punto_de_venta\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
 C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\DataAccess\bin\Debug\netstandard2.0\Common.dll
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\DataAccess\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\DataAccess\obj\Debug\netstandard2.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb

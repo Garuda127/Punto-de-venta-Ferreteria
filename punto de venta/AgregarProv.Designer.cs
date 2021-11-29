@@ -153,6 +153,7 @@ namespace punto_de_venta
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(250, 9);
             this.Name = "AgregarProv";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TransparencyKey = System.Drawing.Color.Silver;
             this.ResumeLayout(false);
             this.PerformLayout();

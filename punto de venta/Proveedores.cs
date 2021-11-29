@@ -14,7 +14,7 @@ namespace punto_de_venta
     public partial class Proveedores : Form
     {
         MostrarProve obje = new MostrarProve();
-        
+        MostrarProve cc = new MostrarProve();
 
         public Proveedores()
         {
@@ -29,8 +29,17 @@ namespace punto_de_venta
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-              EliminarV cc = new EliminarV();
-              cc.Show();
+            string nombre = "";
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                if (dataGridView1.Rows[i].Selected == true)
+                {
+                    nombre = dataGridView1.Rows[i].Cells[0].Value.ToString();
+                    break;
+                }
+            }
+            cc.borrar(nombre);
+            dataGridView1.DataSource = cc.mostrar();
         }
 
 

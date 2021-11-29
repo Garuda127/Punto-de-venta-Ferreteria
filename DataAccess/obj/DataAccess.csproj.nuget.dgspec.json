@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\LPMexcu\\Documents\\Punto_de_venta\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Users\\lpmex\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj": {
+    "C:\\Users\\lpmex\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\lpmex\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\LPMexcu\\.nuget\\packages\\",
-        "outputPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\obj\\",
+        "projectPath": "C:\\Users\\lpmex\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\lpmex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lpmex\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Visual\\3\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\LPMexcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lpmex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,21 +61,25 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\LPMexcu\\Documents\\Punto_de_venta\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\lpmex\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\LPMexcu\\Documents\\Punto_de_venta\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\lpmex\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\LPMexcu\\.nuget\\packages\\",
-        "outputPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\lpmex\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\lpmex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lpmex\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Visual\\3\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\LPMexcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lpmex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,8 +93,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj": {
-                "projectPath": "E:\\LPMexcu\\Documents\\Punto_de_venta\\Common\\Common.csproj"
+              "C:\\Users\\lpmex\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\lpmex\\Documents\\GitHub\\Punto-de-venta-Ferreteria\\Common\\Common.csproj"
               }
             }
           }
@@ -126,7 +134,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

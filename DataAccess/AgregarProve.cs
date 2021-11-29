@@ -22,5 +22,6 @@ namespace DataAccess
             comando.ExecuteNonQuery();
             conexion.Close();
         }
+
     }
 }

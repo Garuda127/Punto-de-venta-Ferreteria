@@ -62,5 +62,10 @@ namespace punto_de_venta
                 return;
             }
         }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
