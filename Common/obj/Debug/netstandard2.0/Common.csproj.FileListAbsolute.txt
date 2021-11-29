@@ -43,3 +43,13 @@ E:\LPMexcu\Documents\Punto_de_venta\Common\obj\Debug\netstandard2.0\Common.cspro
 E:\LPMexcu\Documents\Punto_de_venta\Common\obj\Debug\netstandard2.0\Common.dll
 E:\LPMexcu\Documents\Punto_de_venta\Common\obj\Debug\netstandard2.0\Common.pdb
 C:\Users\hecto\Documents\Punto-de-venta-Ferreteria\Common\obj\Debug\netstandard2.0\Common.csproj.AssemblyReference.cache
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\Common\bin\Debug\netstandard2.0\Common.deps.json
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\Common\bin\Debug\netstandard2.0\Common.dll
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\Common\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\Common\obj\Debug\netstandard2.0\Common.csproj.AssemblyReference.cache
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\Common\obj\Debug\netstandard2.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\Common\obj\Debug\netstandard2.0\Common.dll
+C:\Users\lpmex\Documents\GitHub\Punto-de-venta-Ferreteria\Common\obj\Debug\netstandard2.0\Common.pdb

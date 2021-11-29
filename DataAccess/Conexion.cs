@@ -11,7 +11,7 @@ namespace punto_de_venta
             string bdservidor = "localhost";
             string bdpuerto = "3306";
             string bdusuario = "root";
-            string bdpassword = "root";
+            string bdpassword = "";
             string bd = "ferreteria";
 
             string cadenaConexion = "server=" + bdservidor + "; port=" + bdpuerto + "; user id=" + bdusuario + "; password=" + bdpassword + "; database=" + bd;
